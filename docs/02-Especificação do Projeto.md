@@ -1,26 +1,46 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foram consolidados com a participação dos usuários em um trabalho de 
+imersão feita pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram
+afirmados na forma de personas e histórias de usuários.  
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+### Paula Renata
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+- **Idade:** 31 anos
+- **Ocupação:** Professora de história, atua lecionando em faculdades no curso de bacharel em história.
+- **Motivações:** Cristã praticante da fé. Envolvimento em projetos sociais. Ama Lecionar
+- **Frustrações:** Se manter em isolamento social. Diminuir a participação da prática cristã presencial. Não frequentar mais projetos sociais.
+- **Hobbies, História:** Leitura e estudos de práticas emocionais e psicológicas. Cinema de época.
+- **Aplicativos:** Instagram, Linkedin.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+### André Luiz
+
+- **Idade:** 47 anos
+- **Ocupação:** Empresário, dono de uma rede de lojas do setor de tecnologia e influenciador digital.
+- **Motivações:** Dar o incentivo e oportunidades que não recebeu. Engrandecer sua imagem e de sua marca. Formar novos talentos.
+- **Frustrações:** Ter capital e não saber direcionar a uma causa. Falta de tempo disponível para participar de campanhas sociais.
+- **Hobbies, História:** Criação e cuidado de animais. Entusiasta de tecnologia. Muito atuante em redes sociais.
+- **Aplicativos:** Instagram, Linkedin, Facebook, Reddit, Skype.
+
+### Jorge Aguiar
+
+- **Idade:** 53 anos
+- **Ocupação:** Médico Pneumologista, atuante no front da pandemia em hospitais públicos. 
+- **Motivações:** Sensibilizado pela pandemia procura realizar um trabalho de ajuda a parte do que faz em sua rotina do hospital. 
+- **Frustrações:** Não ter salvado todas as pessoas que poderia. Não ter tempo e ciência do que fazer para ajudar as famílias vítimas da pandemia.
+- **Hobbies, História:** Aprofundamento de estudo médico. Lecionar em palestras e eventos clínicos. Ler e estudar comportamentos e hábitos humanos. 
+- **Aplicativos:** Instagram, Linkedin, Facebook, MedScape.
+
+### Rebeca Fernandes
+
+- **Idade:** 27 anos
+- **Ocupação:** Estudante de economia e estagiária em uma empresa investimentos online.
+- **Motivações:** Foi beneficiada quando adolescente de um projeto social de incentivo a educação financeira de jovens carentes. 
+- **Frustrações:** Não atuar de forma em projetos destinados a jovens que hoje estão na situação que já esteve. Falta de tempo e disponibilidade.
+- **Hobbies, História:** Investir de forma online. Aprofundar seus estudos de área atuante. Praticar exercícios físicos. 
+- **Aplicativos:** Instagram, Facebook, LinkedIn, Trello, Plataformas de investimento.
 
 ## Histórias de Usuários
 
