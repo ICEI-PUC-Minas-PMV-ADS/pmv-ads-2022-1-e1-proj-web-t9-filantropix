@@ -6,7 +6,10 @@
 
 `1º Semestre`
 
-Olá Mundo
+O presente objetivo desse trabalho é a criação de uma página 
+destinada a unir doadores e entidades destinatárias à doação, de uma forma 
+simplificada, eficiente e patrocinada, gerando recompensas como incentivo a cada ato 
+de doação realizado.
 
 ## Integrantes
 
