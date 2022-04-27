@@ -1,16 +1,17 @@
 # FILANTROPIX
 
-`CURSO`
+`Tecnologia em Análise e Desenv. de Sistemas`
 
-`DISCIPLINA`
+`Projeto Desenvolvimento de Aplicações Web Front-End`
 
-`SEMESTRE`
+`1º Semestre`
 
 Olá Mundo
 
 ## Integrantes
 
 * Alexandre Magalhães Ribeiro
+* Ângelo Rodrigues Pereira
 * Alípio Luís Avelar Vieira
 * Amanda Marques Pereira
 * Bruno Selas Soares
@@ -19,7 +20,7 @@ Olá Mundo
 
 ## Orientador
 
-* Nome completo do professor 1
+* Daniela Carvalho Monteiro Ferreira
 
 ## Instruções de utilização
 
