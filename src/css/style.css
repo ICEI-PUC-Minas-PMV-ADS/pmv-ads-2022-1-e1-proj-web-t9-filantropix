@@ -1,0 +1,59 @@
+:root {
+    --theme-colors-white: #FFFFFF;
+    --theme-colors-light: #FFF;
+    --theme-colors-dark: #333;
+    --theme-colors-black: #222D39;
+    --theme-colors-steel: #2A3440;
+    --theme-colors-slate: #3E4854;
+    --theme-colors-silver: #8792A1;
+    --theme-colors-smokeExtraDark: #AAB5C5;
+    --theme-colors-smokeDark: #C3CCD7;
+    --theme-colors-smoke: #D5DCE3;
+    --theme-colors-snowExtraDark: #E6E9EF;
+    --theme-colors-snowDark: #F0F2F6;
+    --theme-colors-snow: #F9FAFB;
+}
+
+.navbar {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navbar-item {
+    margin: 25px 10px;
+    padding: 5px 6px 0px 0px;
+    height: 35px;
+}
+
+.navbar-item-link {
+    color: var(--theme-colors-dark);
+    text-decoration: none;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+    height: 60%;
+    width: 100%;
+    background: var(--theme-colors-snowExtraDark);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
