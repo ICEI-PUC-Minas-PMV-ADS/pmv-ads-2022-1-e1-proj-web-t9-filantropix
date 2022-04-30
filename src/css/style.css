@@ -1,0 +1,276 @@
+:root {
+    --theme-colors-white: #FFFFFF;
+    --theme-colors-charcoal-01: #47525E;
+    --theme-colors-charcoal-02: #3C4650;
+    --theme-colors-charcoal-03: #374049;
+    --theme-colors-charcoal-04: #333B43;
+    --theme-colors-shadowBlue: #8190A5;
+    --theme-colors-slateGray: #697A8B;
+    --theme-colors-aliceBlue: #E5E9F2;
+    --theme-colors-beauBlue: #C0CCDA;
+    --theme-fonts-lato: 'Lato', sans-serif;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.title {
+  margin-left: 40px;
+  font-family: Arvo;
+  font-size: 28px;
+  color: var(--theme-colors-charcoal-01);
+}
+
+.menu {
+  width: 60%;
+  max-width: 600px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  display: none;
+  width: 20px;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-family: var(--theme-fonts-lato);
+  padding: 3px 6px 3px;
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  border: 1px solid var(--theme-colors-shadowBlue);
+}
+
+.nav-item:hover .link {
+  color: var(--theme-colors-charcoal-04);
+}
+
+.nav-item a {
+  color: var(--theme-colors-charcoal-01);
+}
+
+.login-button {
+  background-color: var(--theme-colors-charcoal-01);
+  padding: 3px 12px 3px;
+  border-radius: 3px;
+}
+
+.login-button .link {
+  color: var(--theme-colors-aliceBlue);
+}
+
+.login-button:hover {
+  background-color: var(--theme-colors-slateGray);
+  border: 1px solid var(--theme-colors-slateGray);
+}
+
+.login-button:hover .link {
+  color: var(--theme-colors-aliceBlue);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-img {
+  z-index: -1;
+  position: absolute;
+  margin-top: 100px;
+  left: 0;
+  width: 40%;
+}
+
+.right-img {
+  z-index: -1;
+  margin-top: 100px;
+  position: absolute;
+  right: 0;
+  width: 30%;
+}
+
+.background section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.quote {
+  font-family: var(--theme-fonts-lato);
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.quote-autor {
+  font-size: 16px;
+  font-family: 'Domine', serif;
+  right: 0;
+}
+
+.donate {
+  background-color: var(--theme-colors-charcoal-01);
+  border: 1px solid var(--theme-colors-charcoal-01);
+  width: 160px;
+  height: 45px;
+  border-radius: 5px;
+  color: var(--theme-colors-white);
+  font-family: var(--theme-fonts-lato);
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width:720px) {
+
+  .navbar {
+    align-items:flex-start;
+  }
+
+  .right-img {
+    display: none;
+  }
+
+  .left-img {
+    width: 80%;
+    left: auto;
+    bottom: 60%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-top: 6px;
+    width: 40vw;
+  }
+
+  .login-button {
+    padding: 0;
+    border: none;
+  }
+
+  .icon {
+    display: inline-block;
+  }
+
+  .icon:hover {
+    cursor:pointer;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: var(--theme-colors-charcoal-01);
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+  }
+
+  .nav-list.active {
+    display: flex;
+    height: 240px;
+  }
+
+
+  .nav-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+  }
+
+  .nav-item .link {
+    font-size: 16px;
+  }
+
+  .nav-item:hover {
+    background-color: #5B6A79;
+    border: none;
+  }
+
+  .nav-item:hover .link {
+    color: var(--theme-colors-white);
+  }
+
+  .nav-item .link {
+    color: var(--theme-colors-white);
+  }
+
+  .quote, .quote-autor{
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1200px;
+}
+
+.about-us {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  color: var(--theme-colors-charcoal-01);
+  border-top: 2px solid var(--theme-colors-aliceBlue);
+  border-bottom: 2px solid var(--theme-colors-aliceBlue);
+  padding: 25px 0;
+}
+
+.about-us-container {
+  max-width: 970px;
+  width: 80%;
+  margin-top: 25px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.description {
+  font-family: var(--theme-fonts-lato);
+  color: var(--theme-colors-shadowBlue);
+  word-spacing: 3px;
+}
+
+.about img {
+  width: 400px;
+}
