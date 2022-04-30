@@ -237,7 +237,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1200px;
 }
 
 .about-us {
@@ -273,4 +272,56 @@ main {
 
 .about img {
   width: 400px;
+}
+
+.main-causes {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  color: var(--theme-colors-charcoal-01);
+  border-top: 2px solid var(--theme-colors-aliceBlue);
+  border-bottom: 2px solid var(--theme-colors-aliceBlue);
+  padding: 25px 0;
+}
+
+.cases {
+  display: flex;
+  justify-content: space-between;
+  max-width: 970px;
+  width: 80%;
+  margin-top: 40px;
+}
+
+.case-container {
+  display: inline-flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+
+.case-image {
+  background-color: var(--theme-colors-shadowBlue);
+  height: 300px;
+  width: 300px;
+}
+
+.case-title {
+  color: var(--theme-colors-charcoal-01);
+  font-size: 20px;
+  font-family: 'Domine', serif;
+  margin: 10px 0;
+}
+
+.case-description {
+  font-family: var(--theme-fonts-lato);
+  color: var(--theme-colors-shadowBlue);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+footer {
+  margin-top: 80px;
+  height: 360px;
+  background-color: var(--theme-colors-shadowBlue);
 }
