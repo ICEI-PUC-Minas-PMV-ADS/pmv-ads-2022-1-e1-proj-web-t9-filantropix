@@ -51,13 +51,12 @@
 .nav-item {
   font-size: 20px;
   font-family: var(--theme-fonts-lato);
-  color: var(--theme-colors-charcoal-01);
-  padding: 1px 3px 1px 3px;
+  padding: 3px 6px 3px;
   border: 1px solid transparent;
 }
 
 .nav-item:hover {
-  border: 1px solid var(--theme-colors-charcoal-03);
+  border: 1px solid var(--theme-colors-shadowBlue);
 }
 
 .nav-item:hover .link {
