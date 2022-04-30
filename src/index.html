@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Filantropix</title>
@@ -11,19 +16,46 @@
 <body>
     <header>
         <nav class="navbar">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <ul class="nav-container">
-                <li class="nav-item"><a class="nav-item-link" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-item-link" href="#">Contato</a></li>
-                <li class="nav-item"><a class="nav-item-link" href="#">Quem Somos</a></li>
-                <li class="nav-item"><a class="nav-item-link" href="#">Parceiros</a></li>
-                <li class="nav-item"><a class="nav-item-link" href="#">Login</a></li>
-            </ul>
-        </nav>
-        <div class="background">
-            <div class="container">Lorem Ipsolum Colorus</div>
-        </div>
+            <h1 class="title">Filantropix</h1>
+            <div class="menu">
+                <img class="icon" src="./assets/imgs/more.png">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="link" href="#">Quem somos</a></li>
+                    <li class="nav-item"><a class="link" href="#">Parceiros</a></li>
+                    <li class="nav-item"><a class="link" href="#">Contatos</a></li>
+                    <li class="nav-item login-button"><a class="link" href="#">Login</a></li>
+                </ul>
+            </div>
+          </nav>
+          <div class="background">
+              <img class="left-img" src="./assets/imgs/background-01.jpg">
+              <img class="right-img" src="./assets/imgs/background-02.jpg">
+                <section>
+                    <p class="quote">"Você só se torna melhor que as outras pessoas quando<br>
+                      doa um pouco de si para ajudar o próximo"</p>
+                   <p class="quote-autor">Cezar Fruhauf</p>
+                </section>
+                <button class="donate">DOAR</button>
+          </div>
     </header>
+    <main>
+        <p class="about-us">QUEM<br>SOMOS</p>
+        <div class="about-us-container">
+            <section class="about">
+                <p class="description">Lorem ipsum, dolor sit amet consectetur<br>adipisicing elit. Nostrum mollitia ut<br>voluptates cumque aut dicta quae aspernatur<br>aperiam tempora consequatur.</p>
+                <img src="./assets/imgs/about-01.png">
+            </section>
+            <section class="about">
+                <img src="./assets/imgs/about-02.png">
+                <p class="description">Lorem ipsum, dolor sit amet consectetur<br>adipisicing elit. Nostrum mollitia ut<br>voluptates cumque aut dicta quae aspernatur<br>aperiam tempora consequatur.</p>
+            </section>
+            <section class="about">
+                <p class="description">Lorem ipsum, dolor sit amet consectetur<br>adipisicing elit. Nostrum mollitia ut<br>voluptates cumque aut dicta quae aspernatur<br>aperiam tempora consequatur.</p>
+                <img src="./assets/imgs/about-03.png">
+            </section>
+        </div>
+    </main>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
