@@ -7,55 +7,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/home-page.css" rel="stylesheet">
     <title>Filantropix</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="title">Filantropix</h1>
+            <h1 class="logo">Filantropix</h1>
             <div class="menu">
-                <img class="icon" src="./assets/imgs/more.png">
+                <img class="more-icon" src="./assets/imgs/more.png">
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="link" href="#">Início</a></li>
-                    <li class="nav-item"><a class="link" href="#">Quem somos</a></li>
-                    <li class="nav-item"><a class="link" href="#">Parceiros</a></li>
-                    <li class="nav-item"><a class="link" href="#">Contatos</a></li>
-                    <li class="nav-item login-button"><a class="link" href="#">Login</a></li>
+                    <li class="nav-item"><a href="#">Início</a></li>
+                    <li class="nav-item"><a href="#">Quem somos</a></li>
+                    <li class="nav-item"><a href="#">Parceiros</a></li>
+                    <li class="nav-item"><a href="#">Contatos</a></li>
+                    <li class="nav-item"><a href="#">Login</a></li>
                 </ul>
             </div>
-          </nav>
-          <div class="background">
-              <img class="left-img" src="./assets/imgs/background-01.jpg">
-              <img class="right-img" src="./assets/imgs/background-02.jpg">
-                <section>
-                    <p class="quote">"Você só se torna melhor que as outras pessoas quando<br>
-                      doa um pouco de si para ajudar o próximo"</p>
-                   <p class="quote-autor">Cezar Fruhauf</p>
+        </nav>
+
+        <div class="header-desktop">
+            <div class="image-container">
+                <img class="responsive-image" src="./assets/imgs/background-01.jpg">
+                <img class="responsive-image" src="./assets/imgs/background-02.jpg">
+            </div>
+            <div class="header-desktop-container">
+                <section class="quote-container">
+                    <p class="quote">"Você só se torna melhor que as outras pessoas quando<br>doa um pouco de si para ajudar o próximo"</p>
+                    <p class="quote-autor">Cezar Fruhauf</p>
                 </section>
-                <button class="donate">DOAR</button>
-          </div>
-    </header>
-    <main>
-        <p class="about-us">QUEM<br>SOMOS</p>
-        <div class="about-us-container">
-            <section class="about">
-                <p class="description">Lorem ipsum, dolor sit amet consectetur<br>adipisicing elit. Nostrum mollitia ut<br>voluptates cumque aut dicta quae aspernatur<br>aperiam tempora consequatur.</p>
-                <img src="./assets/imgs/about-01.png">
-            </section>
-            <section class="about">
-                <img src="./assets/imgs/about-02.png">
-                <p class="description">Lorem ipsum, dolor sit amet consectetur<br>adipisicing elit. Nostrum mollitia ut<br>voluptates cumque aut dicta quae aspernatur<br>aperiam tempora consequatur.</p>
-            </section>
-            <section class="about">
-                <p class="description">Lorem ipsum, dolor sit amet consectetur<br>adipisicing elit. Nostrum mollitia ut<br>voluptates cumque aut dicta quae aspernatur<br>aperiam tempora consequatur.</p>
-                <img src="./assets/imgs/about-03.png">
-            </section>
+                <div class="button-donate"><a href="#">DOAR</a></div>
+            </div>
         </div>
-    </main>
+
+        <div class="header-mobile">
+            <img src="./assets/imgs/background-mobile.jpg">
+            <p class="message">Filantropix te ajudando<br> a dar um futuro<br> a quem precisa.</p>
+        </div>
+
+    </header>
     <script src="./js/navbar.js"></script>
 </body>
 </html>
