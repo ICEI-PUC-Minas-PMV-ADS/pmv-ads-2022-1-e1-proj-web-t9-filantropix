@@ -357,3 +357,40 @@ main {
         opacity: .2;
     }
 }
+
+.main-cases {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 970px;
+}
+
+.main-case {
+    margin: 20px 10px;
+    height: 500px;
+    width: 250px;
+    flex-grow: 1;
+    background-color: #FBFCFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.main-case img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.main-case h3 {
+    margin-left: 6px;
+    margin-top: 10px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 16px;
+}
+
+.main-case p {
+    margin-top: 20px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 14px;
+    padding: 0 6px;
+}
