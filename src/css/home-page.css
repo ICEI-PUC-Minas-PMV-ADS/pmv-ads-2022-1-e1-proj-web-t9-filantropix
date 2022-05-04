@@ -66,7 +66,7 @@ html {
     color: var(--theme-colors-charcoal-04);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
 
     .navbar {
         align-items: flex-start;
@@ -156,14 +156,14 @@ html {
 }
 
 .quote {
-    font-size: 1.5vmax;
+    font-size: calc(1rem + .8vw);
     font-family: var(--theme-fonts-lato);
     color: var(--theme-colors-charcoal-01);
     text-align: center;
 }
 
 .quote-autor {
-    font-size: 1vmax;
+    font-size: calc(1rem + .3vw);
     font-family: var(--theme-fonts-abrilFatface);
     color: var(--theme-colors-shadowBlue);
     margin-top: 10px;
@@ -183,7 +183,7 @@ html {
 }
 
 .button-donate a {
-    font-size: 1vmax;
+    font-size: calc(1rem + .4vw);
     font-family: var(--theme-fonts-abrilFatface);
     text-decoration: none;
     color: var(--theme-colors-charcoal-01);
@@ -193,7 +193,18 @@ html {
     color: var(--theme-colors-aliceBlue);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
+    .quote {
+        font-size: calc(1rem + .9vw);
+    }
+
+    .quote-autor {
+        font-size: calc(1rem + .4vw);
+    }
+
+    .button-donate a {
+        font-size: calc(1rem + .5vw);
+    }
 
     .header-desktop {
         display: none;
@@ -262,6 +273,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .section-separer {
@@ -283,32 +295,35 @@ main {
 .about-us {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     margin: 40px 0;
     width: 80%;
-    max-width: 970px;
+    max-width: 770px;
 }
 
 .about {
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    background-color: #FBFCFF;
+    margin: 20px 0;
     align-items: center;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
-.wrap-reverse {
-    flex-wrap: wrap-reverse;
+.about div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .about p {
-    width: 400px;
-    font-size: 1.8rem;
-    font-family: var(--theme-fonts-lato);
-    color: var(--theme-colors-slateGray);
-    line-height: 1.5em;
+    color: var(--theme-colors-charcoal-01);
+    margin: 0 10px;
+    max-width: 400px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 18px;
 }
 
 .about p strong {
@@ -317,13 +332,28 @@ main {
 }
 
 .about img {
-    background-size: contain;
     height: 400px;
-    width: auto;
 }
 
-@media screen and (max-width: 900px) {
-    .about-us {
-        width: 60%;
+@media screen and (max-width: 568px) {
+
+    .about {
+        background-color: #333;
+    }
+
+    .about div {
+        position: absolute;
+        width: 80%;
+    }
+
+    .about p {
+        color: var(--theme-colors-aliceBlue);
+    }
+
+    .about img {
+        width: 100%;
+        object-position: 0 70%;
+        object-fit: cover;
+        opacity: .2;
     }
 }
