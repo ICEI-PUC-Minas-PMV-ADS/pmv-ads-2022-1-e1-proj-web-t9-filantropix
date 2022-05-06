@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
-    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <link href="./css/home-page.css" rel="stylesheet">
     <title>Filantropix</title>
 </head>
@@ -32,12 +32,16 @@
             </div>
         </nav>
 
-        <div class="header-desktop">
-            <div class="image-container">
+
+
+
+
+        <div class="d-flex justify-content-center p-30 align-items-center">
+            <div class="d-flex justify-content-between">
                 <img class="responsive-image" src="./assets/imgs/background-01.jpg">
                 <img class="responsive-image" src="./assets/imgs/background-02.jpg">
             </div>
-            <div class="header-desktop-container">
+            <div id="presentation" class="d-flex justify-content-around align-items-center flex-column">
                 <section class="quote-container">
                     <p class="quote">"Você só se torna melhor que as outras pessoas quando<br>doa um pouco de si para ajudar o próximo"</p>
                     <p class="quote-autor">Cezar Fruhauf</p>
@@ -45,13 +49,21 @@
                 <div class="button-donate"><a href="#">DOAR</a></div>
             </div>
         </div>
+
+
     </header>
 
-    <main>
-        <div class="section-separer"><h2>QUEM<br>SOMOS</h2></div>
-        <section class="about-us">
+    <main class="d-flex flex-column align-items-center">
+        <div class="d-flex w-100 justify-content-center b-top-beau-blue b-bottom-beau-blue p-3">
+            <h2 class="font-abril text-center display-5">QUEM<br>SOMOS</h2>
+        </div>
+
+
+
+
+        <section class=".container">
             <article class="about">
-                <div>
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
                     <p>Sabemos que existem muitas pessoas que estão
                     necessitando de ajuda, e pensando nessas pessoas
                     criamos esse site que visa facilitar a contribuição,
@@ -64,7 +76,7 @@
             </article>
             <article class="about">
                 <img src="./assets/imgs/about-01.jpg">
-                <div>
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
                     <p>Somos uma empresa empenhada em fazer sonhos se tornarem possíveis,
                         acreditamos que o quê nos tornar humanos é a capacidade de sentir
                         empatia sobre outra pessoa.
@@ -76,34 +88,51 @@
                 </div>
             </article>
         </section>
-        <div class="section-separer"><h2>PRINCIPAIS<br>CAUSAS</h2></div>
+
+
+
+
+        <div class="d-flex w-100 justify-content-center b-top-beau-blue b-bottom-beau-blue p-3">
+            <h2 class="font-abril text-center display-5">PRINCIPAIS<br>CAUSAS</h2>
+        </div>
+
+
+
         
-        <section class="main-cases">
+        <section class="d-flex justify-content-center flex-wrap m-3">
+
             <article class="main-case">
-                <img src="./assets/imgs/cases-01.jpg">
-                <h3>Hospital Esperança</h3>
-                <p>O Hospital Esperança é referência em tratamentos contra o cancêr,
+                <img class="w-100 h-50 object-fit-cover" src="./assets/imgs/cases-01.jpg">
+                <h3 class="font-akshar">Hospital Esperança</h3>
+                <p class="font-akshar">O Hospital Esperança é referência em tratamentos contra o cancêr,
                    ajudando crianças diagnosticadas logo na fase inicial da vida. As contribuiçoes
                    enviadas são aplicadas na compra de equipamentos e utensílios necessários
                    para o funcionamento do hospital.
                 </p>
             </article>
+
             <article class="main-case">
-                <img src="./assets/imgs/cases-02.jpg">
-                <h3>Grupo Mais ajuda / Porto Rico</h3>
-                <p>Ajudando pessoas em baixas condições de vida, o Grupo
+                <img class="w-100 h-50 object-fit-cover"src="./assets/imgs/cases-02.jpg">
+                <h3 class="display-6 font-akshar">Grupo Mais ajuda / Porto Rico</h3>
+                <p class="font-akshar">Ajudando pessoas em baixas condições de vida, o Grupo
                     Mais ajuda tem sido extremamente importante para a população
                     de Porto Rico mesmo sem nenhum tipo de ajuda governamental.
                  </p>
             </article>
+
             <article class="main-case">
-                <img src="./assets/imgs/cases-03.jpg">
+                <img class="w-100 h-50 object-fit-cover" src="./assets/imgs/cases-03.jpg">
                 <h3>We can / Guerra da Ucrânia</h3>
-                <p>We can é um grupo de ajuda voluntária que está
+                <p class="font-akshar">We can é um grupo de ajuda voluntária que está
                     ajudando grupos de refugiados na Ucrânia durante está guerra.
                  </p>
             </article>
+
         </section>
+
+
+
+
     </main>
 
     <footer></footer>
@@ -111,5 +140,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
