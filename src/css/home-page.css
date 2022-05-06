@@ -57,6 +57,11 @@ html {
     display: flex;
     align-items: center;
     height: 25px;
+    padding: 3px 6px;
+}
+
+.nav-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .nav-item a {
@@ -70,12 +75,12 @@ html {
 
     .navbar {
         align-items: flex-start;
-        justify-content: flex-end;
+        justify-content: space-between;
         border-bottom: 1px solid var(--theme-colors-beauBlue);
     }
 
     .logo {
-        display: none;
+        font-size: 2rem;
     }
 
     .menu {
@@ -97,8 +102,8 @@ html {
         flex-direction: column;
         justify-content: space-around;
         margin-top: 30px;
-        height: 280px;
-        width: 200px;
+        height: 200px;
+        width: 150px;
     }
 
     .nav-list.active {
@@ -115,6 +120,7 @@ html {
 
     .nav-item a {
         color: var(--theme-colors-aliceBlue);
+        font-size: 1.6rem;
     }
 }
 
@@ -156,6 +162,7 @@ html {
 }
 
 .quote {
+    z-index: -1;
     font-size: calc(1rem + .8vw);
     font-family: var(--theme-fonts-lato);
     color: var(--theme-colors-charcoal-01);
@@ -163,6 +170,7 @@ html {
 }
 
 .quote-autor {
+    z-index: -1;
     font-size: calc(1rem + .3vw);
     font-family: var(--theme-fonts-abrilFatface);
     color: var(--theme-colors-shadowBlue);
@@ -194,8 +202,21 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+
+    .header-desktop {
+        justify-content: center;
+    }
+
+    .header-desktop-container {
+        position: relative;
+    }
+
+    .quote-container {
+        position: relative;
+    }
+
     .quote {
-        font-size: calc(1rem + .9vw);
+        font-size: calc(1rem + .7vw);
     }
 
     .quote-autor {
@@ -206,15 +227,7 @@ html {
         font-size: calc(1rem + .5vw);
     }
 
-    .header-desktop {
-        display: none;
-    }
-
-    .quote-container {
-        display: none;
-    }
-
-    .button-donate {
+    .responsive-image {
         display: none;
     }
 }
@@ -323,7 +336,7 @@ main {
     margin: 0 10px;
     max-width: 400px;
     font-family: 'Akshar', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .about p strong {
@@ -335,7 +348,17 @@ main {
     height: 400px;
 }
 
+@media screen and (max-width: 768px) {
+    .section-separer h2 {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 568px) {
+
+    .section-separer h2 {
+        font-size: 20px;
+    }
 
     .about {
         background-color: #333;
@@ -348,6 +371,7 @@ main {
 
     .about p {
         color: var(--theme-colors-aliceBlue);
+        font-size: 18px;
     }
 
     .about img {
@@ -391,6 +415,13 @@ main {
 .main-case p {
     margin-top: 20px;
     font-family: 'Akshar', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: var(--theme-colors-charcoal-02);
 }
