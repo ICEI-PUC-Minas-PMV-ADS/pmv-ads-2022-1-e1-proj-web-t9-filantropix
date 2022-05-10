@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="title">Filantropix</h1>
+            <div class="menu">
+                <img class="icon" src="../assets/imgs/more.png">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="link" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="link" href="#">Quem somos</a></li>
+                    <li class="nav-item"><a class="link" href="#">Parceiros</a></li>
+                    <li class="nav-item"><a class="link" href="./contacts/contacts.html">Contatos</a></li>
+                    <li class="nav-item login-button"><a class="link" href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="title head-title">
+                <h1 class="title-contact">Deixe sua</h1>
+                <h1 class="title-contact">Mensagem</h1>
+            </div>
+            <div class="message description">
+                <span>Responderemos em breve</span>
+            </div>
+            <div class="form-content">
+                <form id="from" class="form">
+                    <div class="input-form">
+                        <label for="name">Nome *</label>
+                        <input id="name" type="text" placeholder="Informe seu nome" required>
+                    </div>
+                    <div class="input-form">
+                        <label for="email">Email *</label>
+                        <input id="email" type="email" placeholder="Informe seu email" required>
+                    </div>
+                    <div class="input-form">
+                        <label for="description">Assunto *</label>
+                        <input id="description" type="text" placeholder="Informe o assunto" required>
+                    </div>
+                    <div class="input-form">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva aqui uma breve mensagem ..."></textarea>
+                    </div>
+                    <div class="action">
+                        <button onclick="form()" class="donate">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
