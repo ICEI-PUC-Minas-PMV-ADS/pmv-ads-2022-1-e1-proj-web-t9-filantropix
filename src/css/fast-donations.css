@@ -1,0 +1,41 @@
+header {
+    border-bottom: 1px solid var(--theme-colors-aliceBlue);
+}
+
+.logo-image {
+    width: 100px;
+    margin: 20px 0;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 30px;
+}
+
+.presentation h1 {
+    font-size: 18px;
+}
+
+.presentation h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.presentation h5 {
+    margin-left: 60%;
+
+}
+
+.donation-section {
+    padding: 40px 0 0;
+    width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .presentation h2 {
+        font-size: 14px;
+    }
+}
