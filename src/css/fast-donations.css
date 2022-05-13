@@ -31,6 +31,13 @@ header {
 .donation-section {
     padding: 40px 0 0;
     width: 80%;
+    
+}
+  
+.forms{
+    border-color: blueviolet;
+    border-radius: 20px;
+    
 }
 
 @media screen and (max-width: 900px) {
