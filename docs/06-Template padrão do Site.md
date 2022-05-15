@@ -1,12 +1,15 @@
 # Template padrão do site
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+O padrão de layout a ser utilizado pelo site tem como base os <a href="3-Projeto de Interface.md">wireframes</a>,  
+sendo descrito a seguir:
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+
+O arquivos de layout são:
+
+- `Style.css`: Que define variáveis de cor, font.
+- `Navbar.css`: Que define os estilos para a navbar.
+- `Navbar.js`: Que define os eventos de click da navbar.
+- `Assets`: Icones e outras imagens presentes em todas as telas. 
+
+Para ver Layout padrão do site, <a href="../src/web/_default/">Acesse</a>.
