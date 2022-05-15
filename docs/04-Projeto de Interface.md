@@ -13,7 +13,7 @@ O diagrama apresentado na figura a seguir mostra o fluxo de interação do usuá
 pela navegação do sistema. Cada uma das telas deste fluxo é detalhada na seção de 
 Wireframes que se segue. Para visualizar o Wireframe interativo, acesse: 
 
-![Exemplo de UserFlow](img/userflow.jpg)
+![Exemplo de UserFlow](./img/user-flow.jpg)
 
 ## Wireframes
 
