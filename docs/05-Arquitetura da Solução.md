@@ -1,16 +1,18 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+Nesse item do projeto demonstraremos os detalhes técnicos de implementação 
+da solução do problema (Arquitetura da aplicação) a serem aplicadas pelo time de 
+desenvolvedores demonstrando
+os componentes e detalhes que compõe a parte do ambiente de hospedagem do 
+projeto.
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
 ## Diagrama de componentes
 
 Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
 
-Exemplo: 
-
-Os componentes que fazem parte da solução são apresentados na Figura XX.
+O diagrama a seguir mostra os detalhes técnicos aplicados pelos profissionais 
+da equipe nesse cenário de hospedagem:
 
 ![Diagrama de Componentes](img/componentes.png)
 <center>Figura XX - Arquitetura da Solução</center>
