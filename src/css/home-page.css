@@ -1,39 +1,14 @@
-:root {
-    --theme-colors-white: #FFFFFF;
-    --theme-colors-charcoal-01: #47525E;
-    --theme-colors-charcoal-02: #3C4650;
-    --theme-colors-charcoal-03: #374049;
-    --theme-colors-charcoal-04: #333B43;
-    --theme-colors-shadowBlue: #8190A5;
-    --theme-colors-slateGray: #697A8B;
-    --theme-colors-aliceBlue: #E5E9F2;
-    --theme-colors-beauBlue: #C0CCDA;
-    --theme-fonts-lato: 'Lato', sans-serif;
-    --theme-fonts-abrilFatface: 'Abril Fatface', cursive;
-}
-
 html {
     font-size: 10px;
 }
 
-
-
-/* Start: Header Desktop */
-
-#presentation {
-    position: absolute;
-}
-
-.responsive-image {
+.presentation-image {
     z-index: -1;
     width: 33%;
 }
 
-.quote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-bottom: 20px;
+#presentation {
+    position: absolute;
 }
 
 .quote {
@@ -77,51 +52,28 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .presentation-image {
+        display: none;
+    }
 
     #presentation {
         position: relative;
     }
-
-    .quote-container {
-        position: relative;
-    }
-
-    .quote {
-        font-size: calc(1rem + .7vw);
-    }
-
-    .quote-autor {
-        font-size: calc(1rem + .4vw);
-    }
-
-    .button-donate a {
-        font-size: calc(1rem + .5vw);
-    }
-
-    .responsive-image {
-        display: none;
-    }
 }
 
-/* End: Header Desktop */
-
-
-.about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0;
-    width: 80%;
-    max-width: 770px;
+.section-title {
+    font-size: 22px;
+    text-align: center;
+    font-family: var(--theme-fonts-abrilFatface);
 }
 
 .about {
     display: flex;
-    width: 100%;
     height: 400px;
-    background-color: #FBFCFF;
     margin: 20px 0;
-    align-items: center;
+    width: 80%;
+    background-color: #FBFCFF;
+    max-width: 768px;
 }
 
 .about p {
@@ -132,24 +84,16 @@ html {
     font-size: 22px;
 }
 
-.about p strong {
-    color: var(--theme-colors-charcoal-01);
-    font-size: 2rem;
-}
-
 .about img {
     height: 400px;
+    object-fit: cover;
+    object-position: 0 70%;
 }
 
-
-@media screen and (max-width: 708px) {
+@media screen and (max-width: 768px) {
 
     .about {
         background-color: #333;
-    }
-
-    .about div {
-        width: 80%;
     }
 
     .about p {
@@ -160,8 +104,6 @@ html {
     .about img {
         position: absolute;
         width: 80%;
-        object-position: 0 70%;
-        object-fit: cover;
         opacity: .2;
     }
 }
@@ -169,15 +111,80 @@ html {
 .main-case {
     margin: 20px 10px;
     height: 500px;
-    width: 250px;
+    width: 300px;
     flex-grow: 1;
     background-color: #FBFCFF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-footer {
+.main-case h3 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.main-case p {
+    font-size: 18px;
+    margin: 0 10px;
+    font-family: 'Akshar', sans-serif;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+.fcontainer {
+    border: 1px solid red
+}
+
+footer .items-container {
+    padding: 50px 0;
+    width: 100%;
+    margin-top: 60px;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    height: 200px;
-    background-color: var(--theme-colors-charcoal-02);
+    flex-direction: row;
+    border-top: 1px solid var(--theme-colors-aliceBlue);
+    border-bottom: 1px solid var(--theme-colors-aliceBlue);
+}
+
+footer .nav-item {
+    background-color: #fff;
+    align-items: flex-start;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin: 0 40px;
+}
+
+.sections {
+    padding: 0;
+    list-style: none;
+}
+
+.section-item {
+    font-size: 18px;
+}
+
+.section-link {
+    text-decoration: none;
+}
+
+#newsletter-container {
+    margin: 20px 40px;
+    width: 300px;
+}
+
+.centralized-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
 }

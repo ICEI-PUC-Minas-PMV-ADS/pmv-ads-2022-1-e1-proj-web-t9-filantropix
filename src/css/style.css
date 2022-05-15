@@ -15,6 +15,10 @@
 
 /* Theme fonts */
 
+html {
+    font-size: 10px;
+}
+
 .font-lato {
     font-family: var(--theme-fonts-lato);
 }
