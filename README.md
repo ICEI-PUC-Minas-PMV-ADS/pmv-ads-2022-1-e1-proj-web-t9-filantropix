@@ -2,7 +2,10 @@
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+O site em HTML/CSS/JS é um projeto estático, sendo assim, pode ser executado  
+em qualquer ambiente de hospedagem sem muito esforço.
+
+O Site está hospedado no GitHub Pages. [Link](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t9-filantropix/)
 
 ## Histórico de versões
 
