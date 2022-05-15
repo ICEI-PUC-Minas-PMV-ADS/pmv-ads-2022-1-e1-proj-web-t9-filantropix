@@ -27,3 +27,58 @@ e sobre as causas que apoiamos.
 </div>
 
 **Essa é uma amostra, para ver a tela completa acesse:** [Home-Page](https://marvelapp.com/prototype/7fjg35c/screen/86229812)
+
+#### Contribution Selection Page
+
+É a página onde o usuário seleciona se deseja fazer uma doação de modo rápido  
+ou se cadastrar.
+
+<div>
+  <img height="400em" src="./img/wireframe-contribution-selection.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Contribution-Selection-Page](https://marvelapp.com/prototype/7fjg35c/screen/86230423)
+
+#### Cadatre Page
+
+É a página onde o usuário se cadastra na plataforma.
+
+<div>
+  <img height="400em" src="./img/wireframe-cadastre.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Cadastre-Page](https://marvelapp.com/prototype/7fjg35c/screen/86230736)
+
+#### Contribution Page
+
+É a página onde o usuário decide para quais itens a doação
+será destinada.
+
+<div>
+  <img height="400em" src="./img/wireframe-contribution.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Contribution-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249093)
+
+
+#### Employees Page
+
+É a página de colaboradores, onde é mostrado quais empresas  
+apoiam e fazem parte da plataforma.
+
+<div>
+  <img height="400em" src="./img/wireframe-employees.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Employees-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249575)
+
+#### Contacts Page
+
+É a página onde os usuários e empresas podem nos contatar  
+seja para suporte ou interesse em fazer da plataforma.
+
+<div>
+  <img height="400em" src="./img/wireframe-contacts.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Contacts-Page](https://marvelapp.com/prototype/7fjg35c/screen/86230999)
