@@ -61,8 +61,16 @@ height: 100%;
     border: 1px solid #bfc8ff;
 }
 
+.btn-cadastre a {
+    text-decoration: none;
+    color: #bfc8ff;
+}
+
 .btn-cadastre:hover {
     background-color: #bfc8ff;
+}
+
+.btn-cadastre:hover a {
     color: var(--theme-colors-aliceBlue);
 }
 
