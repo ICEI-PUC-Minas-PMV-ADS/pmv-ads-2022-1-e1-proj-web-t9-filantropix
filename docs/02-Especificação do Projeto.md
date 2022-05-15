@@ -44,21 +44,20 @@ afirmados na forma de personas e histórias de usuários.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A fim de buscar mais informações sobre os motivos e causas de uso dessas 
+pessoas à plataforma a ser desenvolvida, foram realizadas perguntas por meio de 
+entrevistas, tendo resultados demonstrados no quadro apresentado:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                 |PARA ... `MOTIVO/VALOR`                          |
+|--------------------|----------------------------------------------------|-------------------------------------------------|
+|Paula Renata        | Participar de alguma causa social sem sair de casa | Manter o isolamento social                      |
+|Paula Renata        | Ajudar em causas grandes internacionalmente        | Fortalecer a fé                                 |
+|André Luiz          | Incentivar jovens na carreira profissional         | Formar novos talentos e gerar empregos          |
+|André Luiz          | Atrelar a minha empresa a causas filantrópicas     | Aumentar a visibilidade de sua empresa          |
+|Jorge Aguiar        | Ajudar pessoas afetadas pela pandemia              | Cumprir com o dever moral que sente como médico |
+|Jorge Aguiar        | Encontrar mais fácilmente causas para eu apoiar    | Poder ajudar mais as pessoas que precisam       |
+|Rebeca Fernandes    | Tranformar a vida de uma pessoal                   | Retribuição moral e pessoal                     |
+|Rebeca Fernandes    | Contribuir com instituições de ajuda               | Poder ajudar sem que eu tenha conhecimento      |
 
 ## Requisitos
 
