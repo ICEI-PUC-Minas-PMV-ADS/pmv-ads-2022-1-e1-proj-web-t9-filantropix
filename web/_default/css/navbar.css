@@ -1,58 +1,3 @@
-:root {
-    --theme-colors-white: #FFFFFF;
-    --theme-colors-charcoal-01: #47525E;
-    --theme-colors-charcoal-02: #3C4650;
-    --theme-colors-charcoal-03: #374049;
-    --theme-colors-charcoal-04: #333B43;
-    --theme-colors-shadowBlue: #8190A5;
-    --theme-colors-slateGray: #697A8B;
-    --theme-colors-aliceBlue: #E5E9F2;
-    --theme-colors-beauBlue: #C0CCDA;
-    --theme-fonts-lato: 'Lato', sans-serif;
-    --theme-fonts-abrilFatface: 'Abril Fatface', cursive;
-    --theme-fonts-akshar: 'Akshar', sans-serif;
-}
-
-/* Theme fonts */
-
-.font-lato {
-    font-family: var(--theme-fonts-lato);
-}
-
-.font-abril {
-    font-family: var(--theme-fonts-abrilFatface);
-}
-
-.font-akshar {
-    font-family: var(--theme-fonts-akshar);
-}
-
-/* Theme colors */
-
-.color-charcoal {
-    color: var(--theme-colors-charcoal-01);
-}
-
-.object-fit-cover {
-    object-fit: cover;
-}
-
-.p-30 {
-    padding: 30px 0;
-}
-
-
-.b-top-beau-blue {
-    border-top: 1px solid var(--theme-colors-beauBlue);
-}
-
-.b-bottom-beau-blue {
-    border-bottom: 1px solid var(--theme-colors-beauBlue);
-}
-
-
-/* Start: Navbar */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -158,5 +103,3 @@
         font-size: 1.6rem;
     }
 }
-
-/* End: Navbar */
