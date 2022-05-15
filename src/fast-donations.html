@@ -52,30 +52,33 @@
     <main class="d-flex w-100 flex-column align-items-center">
         <section class="donate-section">
             <div>
-                <h1>Doe Aqui:</h1>
+                <h1 class="display-4 text-muted">Doe Aqui:</h1>
                 <p>Ecolha de forma rápida as opções e em segundos faça sua doação:</p>
             </div>
 
-            <div>
-                <label for="msg">Insira uma mensagem de amor:</label>
-                <input id="msg" name="Message" type="text" placeholder="Insira sua mensagem">
+            <div class="form-group">
+                <label for="msg"><strong>Insira uma mensagem de amor:</strong></label>
+                <textarea class="form-control forms" name="Message" id="msg" cols="30" rows="10"></textarea placeholder="Insira sua mensagem">
             </div>
             <br>
-            <div>
-                Escolha um valor: <br>
-                <input name="Valor" type="radio" value="R$50,00"> R$50,00
+           <div class="form-group">
+                <label for="val"><strong>Escolha um valor:</strong></label> <br>
+                <input id="val" name="Valor" type="radio" value="R$50,00"> R$50,00
                 <input name="Valor" type="radio" value="R$100,00"> R$100,00
                 <input name="Valor" type="radio" value="R$200,00"> R$200,00
                 <input name="Valor" type="radio" value="R$300,00"> R$300,00
                 <input name="Valor" type="radio" value="R$500,00"> R$500,00
                 <input name="Valor" type="radio" value="Outros"> Outros
-                <input name="Outros" type="text" placeholder="Outros Valores">
+                <input class="form-control forms" name="Outros" type="text" placeholder="Outros Valores">
             </div>
             <br>
-            <div>
-                Selecione uma Causa: <br>
-                <input name="Causa" list="Causas" placeholder="Causas Independentes">
+            <div class="form-group">
+                <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
+                <input class="form-control forms" id="Causa1" name="Causa" list="Causas" placeholder="Causas Independentes">
                 <datalist id="Causas">
+                    <option value="Hospital Esperança"></option>
+                    <option value="Grupo Mais Ajuda/Porto Rico"></option>
+                    <option value="We Can/Guerra da Ucrânia"></option>
                     <option value="Campanha do agasalho"></option>
                     <option value="Amigos do bem"></option>
                     <option value="Mães das favelas"></option>
@@ -86,8 +89,8 @@
                 </datalist>
             </div>
             <br>
-            <div>
-                <input name="Causa patrocinada" list="Causas patrocinadas" placeholder="Causas Patrocinadas">
+            <div class="form-group">
+                <input class="form-control forms" name="Causa patrocinada" list="Causas patrocinadas" placeholder="Causas Patrocinadas">
                 <datalist id="Causas patrocinadas">
                     <option value="Outback contra a fome"></option>
                     <option value="Itaú contra o frio"></option>
@@ -99,16 +102,23 @@
                 </datalist>
             </div>
             <br>
-            <div>
-                Forma de Pagamento: <br>
-                <input name="valor" type="radio" value="Pix"> Pix
+            <div class="form-group">
+                <label for="pgto"><strong>Forma de Pagamento:</strong></label> <br>
+                <input id="pgto" name="valor" type="radio" value="Pix"> Pix
                 <input name="valor" type="radio" value="Cartão"> Cartão de Crédito
                 <input name="valor" type="radio" value="Boleto"> Boleto
             </div>
             <br>
-            <div>Finalizar</div>
-            </div>
+            <button type="submit" class="btn-lg btn-primary">Finalizar</button>
+            
         </section>
+
+        <footer>
+            <div class="d-flex justify-content-center py-4 mx-5 w-100">
+               
+                  <p class="mx-5">&copy; 2022 Filantropix, Inc. All rights reserved.</p>
+            
+        </footer>
     </main>
 
 
