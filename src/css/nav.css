@@ -1,0 +1,91 @@
+:root {
+    --theme-colors-white: #ffffff;
+    --theme-colors-charcoal-01: #47525e;
+    --theme-colors-charcoal-02: #3c4650;
+    --theme-colors-charcoal-03: #374049;
+    --theme-colors-charcoal-04: #333b43;
+    --theme-colors-shadowBlue: #8190a5;
+    --theme-colors-slateGray: #697a8b;
+    --theme-colors-aliceBlue: #e5e9f2;
+    --theme-colors-beauBlue: #c0ccda;
+    --theme-fonts-lato: "Lato", sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.title {
+    margin-left: 40px;
+    font-family: Arvo;
+    font-size: 28px;
+    color: var(--theme-colors-charcoal-01);
+}
+
+.menu {
+    width: 60%;
+    max-width: 600px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: none;
+    width: 20px;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-family: var(--theme-fonts-lato);
+    padding: 3px 6px 3px;
+    border: 1px solid transparent;
+}
+
+.nav-item:hover {
+    border: 1px solid var(--theme-colors-shadowBlue);
+}
+
+.nav-item:hover .link {
+    color: var(--theme-colors-charcoal-04);
+}
+
+.nav-item a {
+    color: var(--theme-colors-charcoal-01);
+}
+
+.login-button {
+    background-color: var(--theme-colors-charcoal-01);
+    padding: 3px 12px 3px;
+    border-radius: 3px;
+}
+
+.login-button .link {
+    color: var(--theme-colors-aliceBlue);
+}
+
+.login-button:hover {
+    background-color: var(--theme-colors-slateGray);
+    border: 1px solid var(--theme-colors-slateGray);
+}
+
+.login-button:hover .link {
+    color: var(--theme-colors-aliceBlue);
+}
+
+.link {
+    text-decoration: none;
+}
