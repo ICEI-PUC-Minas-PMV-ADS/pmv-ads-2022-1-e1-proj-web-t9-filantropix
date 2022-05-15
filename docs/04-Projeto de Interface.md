@@ -19,7 +19,7 @@ Wireframes que se segue. Para visualizar o Wireframe interativo, acesse:
 
 #### Home Page
 
-É a página de apresentação, onde falamos um pouco sobre quem somos  
+É a página onde falamos um pouco sobre quem somos  
 e sobre as causas que apoiamos.
 
 <div>
@@ -60,10 +60,21 @@ será destinada.
 
 **Essa é uma amostra, para ver a tela completa acesse:** [Contribution-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249093)
 
+#### Payment Page
+
+É a página onde o usuário efetua o pagamento dos itens  
+e/ou do valor especificado para doação.
+
+<div>
+  <img height="400em" src="./img/wireframe-payment.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Payment-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249334)
+
 
 #### Employees Page
 
-É a página de colaboradores, onde é mostrado quais empresas  
+É a página onde é mostrado quais empresas  
 apoiam e fazem parte da plataforma.
 
 <div>
