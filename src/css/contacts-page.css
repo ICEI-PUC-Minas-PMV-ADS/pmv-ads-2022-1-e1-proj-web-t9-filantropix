@@ -1,0 +1,108 @@
+:root {
+    --theme-colors-white: #ffffff;
+    --theme-colors-charcoal-01: #47525e;
+    --theme-colors-charcoal-02: #3c4650;
+    --theme-colors-charcoal-03: #374049;
+    --theme-colors-charcoal-04: #333b43;
+    --theme-colors-shadowBlue: #8190a5;
+    --theme-colors-slateGray: #697a8b;
+    --theme-colors-aliceBlue: #e5e9f2;
+    --theme-colors-beauBlue: #c0ccda;
+    --theme-fonts-lato: "Lato", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 70px
+}
+
+.nav-title {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.title-contact {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.head-title {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #dbdee3;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.message {
+    margin: 16px auto;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.area {
+    height: 60px;
+}
+
+.description {
+    font-family: var(--theme-fonts-lato);
+    color: var(--theme-colors-shadowBlue);
+    word-spacing: 3px;
+}
+
+.action {
+    display: flex;
+}
+
+.donate {
+    background-color: var(--theme-colors-charcoal-01);
+    border: 1px solid var(--theme-colors-charcoal-01);
+    width: 160px;
+    height: 45px;
+    border-radius: 5px;
+    color: var(--theme-colors-white);
+    font-family: var(--theme-fonts-lato);
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}

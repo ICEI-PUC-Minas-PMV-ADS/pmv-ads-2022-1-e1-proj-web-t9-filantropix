@@ -1,0 +1,30 @@
+:root {
+    --theme-colors-white: #FFFFFF;
+    --theme-colors-charcoal-01: #47525E;
+    --theme-colors-charcoal-02: #3C4650;
+    --theme-colors-charcoal-03: #374049;
+    --theme-colors-charcoal-04: #333B43;
+    --theme-colors-shadowBlue: #8190A5;
+    --theme-colors-slateGray: #697A8B;
+    --theme-colors-aliceBlue: #E5E9F2;
+    --theme-colors-beauBlue: #C0CCDA;
+    --theme-fonts-lato: 'Lato', sans-serif;
+}
+
+input {
+    border-radius: 5px;
+    border: 0.1em solid #a6a6a6;
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 4px;
+    font-family: var(--theme-fonts-lato);
+    letter-spacing: 1px;
+}
