@@ -3,7 +3,13 @@
 O padrão de layout a ser utilizado pelo site tem como base os <a href="3-Projeto de Interface.md">wireframes</a>,  
 sendo descrito a seguir:
 
+<div>
+  <img height="400em" src="./img/template-site.png">
+</div>
 
+O layout é composto por:
+
+- Navbar
 
 O arquivos de layout são:
 
