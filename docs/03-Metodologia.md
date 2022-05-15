@@ -51,31 +51,31 @@ definição do processo de desenvolvimento.
 ### Processo
 
 O Gerenciamento é feito atráves da funcionalidade Projects do [Github](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards),  
-Os seguintes quadros são utilizados:
+A imagem a seguir mostra a estruturação dos quadros kanban:
+
+<div>
+  <img height="480em" src="./img/github-project.png">
+</div>
 
 - `Product Backlog`: Contém as informações sobre o projeto de maneira geral e sobre os itens a serem executados.
 - `Sprint Backlog`: Contém o detalhamento das tarefas/itens contidos no Product Backlog a serem entregues pela equipe do projeto. 
 - `Em andamento`: Contém as tarefas do projeto que estão em andamento.
 - `Tarefas Concluídas`:  Contém as todas as tarefas concluídas.
 
-
-
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- **Github** (Gerenciamento e repósitorio de código)
+- **Visual Studio Code** (Editor de código).
+- **Microsoft Teams** (Software de comunicação)
+- **Marvel** (Wireframes)
+- **Git** (Versionamento de código)
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+O Visual Studio Code foi escolhido porque ele possui uma integração com o
+sistema de versão e tem suporte a qualquer sistema operacional.  
+O Microsoft Teams foi utilizado por ser uma ferramenta
+fácil e gratuita.
+Por fim, para criar
+diagramas utilizamos o Marvel por ser uma ferramenta que permite
+a publicação dos wireframes, além de gratuita para uso comum.
