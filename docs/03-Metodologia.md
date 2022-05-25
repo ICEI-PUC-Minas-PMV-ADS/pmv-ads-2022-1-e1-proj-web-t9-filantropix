@@ -1,77 +1,81 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
-
+A metodologia contempla as definições de ferramentas utilizadas pela equipe 
+tanto para a manutenção dos códigos e demais artefatos quanto para a organização 
+do time na execução das tarefas do projeto.
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
 
-O projeto segue a seguinte convenção para o nome de branches:
+O projeto segue o padrão de trabalho do git flow apresentado por Vincent Driessen (2010),  
+mostrado na figura a seguir.
+
+<div>
+  <img height="280em" src="./img/git-flow.png">
+ </div>
+
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `hotfix`: versão de correção de bug
+- `release`: versão de empacotamento
+- `develop`: versão de desenvolvimento do software
+- `feature`: versão de nova funcionalidade
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
-- `documentation`: melhorias ou acréscimos à documentação
+- `documentação`: melhorias ou acréscimos à documentação
 - `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+- `teste`: teste de funcionalidade
+- `desenvolvimento`: uma nova funcionalidade ou modificação nos módulos existentes
 
 ## Gerenciamento de Projeto
 
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para  
+definição do processo de desenvolvimento.
+
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- **Scrum Master**: [Ângelo Pereira](https://github.com/Angelorod27)
+- **Product Owner**: [Raul Shinaede](https://github.com/RaulShinaede)
+- **Equipe de desenvolvimento**:
+  - [Alexandre Magalhães](https://github.com/Alemagalhaes01)
+  - [Alípio Avelar](https://github.com/alipioavelar)
+  - [Amanda Marques](https://github.com/Amanda507)
+  - [Bruno Selas](https://github.com/brunosellas)
+  - [Gabrielle Evangelista](https://github.com/gabir0)
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+O Gerenciamento é feito atráves da funcionalidade Projects do [Github](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards),  
+A imagem a seguir mostra a estruturação dos quadros kanban:
+
+<div>
+  <img height="480em" src="./img/github-project.png">
+</div>
+
+- `Product Backlog`: Contém as informações sobre o projeto de maneira geral e sobre os itens a serem executados.
+- `Sprint Backlog`: Contém o detalhamento das tarefas/itens contidos no Product Backlog a serem entregues pela equipe do projeto. 
+- `Em andamento`: Contém as tarefas do projeto que estão em andamento.
+- `Tarefas Concluídas`:  Contém as todas as tarefas concluídas.
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- **Github** (Gerenciamento e repósitorio de código)
+- **Visual Studio Code** (Editor de código).
+- **Microsoft Teams** (Software de comunicação)
+- **Marvel** (Wireframes)
+- **Git** (Versionamento de código)
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+O Visual Studio Code foi escolhido porque ele possui uma integração com o
+sistema de versão e tem suporte a qualquer sistema operacional.  
+O Microsoft Teams foi utilizado por ser uma ferramenta
+fácil e gratuita.
+Por fim, para criar
+diagramas utilizamos o Marvel por ser uma ferramenta que permite
+a publicação dos wireframes, além de gratuita para uso comum.

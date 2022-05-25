@@ -1,35 +1,95 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+Dentre as preocupações para a montagem da interface do sistema, será 
+estabelecido foco em questões como agilidade, acessibilidade e usabilidade. Desta 
+forma, o projeto tem uma identidade visual padronizada em todas as telas que são 
+projetadas para funcionamento em desktops e dispositivos móveis.
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O diagrama apresentado na figura a seguir mostra o fluxo de interação do usuário 
+pela navegação do sistema. Cada uma das telas deste fluxo é detalhada na seção de 
+Wireframes que se segue. Para visualizar o Wireframe interativo, acesse: 
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+![Exemplo de UserFlow](./img/user-flow.jpg)
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+#### Home Page
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+É a página onde falamos um pouco sobre quem somos  
+e sobre as causas que apoiamos.
+
+<div>
+  <img height="400em" src="./img/wireframe-home.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Home-Page](https://marvelapp.com/prototype/7fjg35c/screen/86229812)
+
+#### Contribution Selection Page
+
+É a página onde o usuário seleciona se deseja fazer uma doação de modo rápido  
+ou se cadastrar.
+
+<div>
+  <img height="400em" src="./img/wireframe-contribution-selection.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Contribution-Selection-Page](https://marvelapp.com/prototype/7fjg35c/screen/86230423)
+
+#### Cadatre Page
+
+É a página onde o usuário se cadastra na plataforma.
+
+<div>
+  <img height="400em" src="./img/wireframe-cadastre.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Cadastre-Page](https://marvelapp.com/prototype/7fjg35c/screen/86230736)
+
+#### Contribution Page
+
+É a página onde o usuário decide para quais itens a doação
+será destinada.
+
+<div>
+  <img height="400em" src="./img/wireframe-contribution.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Contribution-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249093)
+
+#### Payment Page
+
+É a página onde o usuário efetua o pagamento dos itens  
+e/ou do valor especificado para doação.
+
+<div>
+  <img height="400em" src="./img/wireframe-payment.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Payment-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249334)
+
+
+#### Employees Page
+
+É a página onde é mostrado quais empresas  
+apoiam e fazem parte da plataforma.
+
+<div>
+  <img height="400em" src="./img/wireframe-employees.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Employees-Page](https://marvelapp.com/prototype/7fjg35c/screen/86249575)
+
+#### Contacts Page
+
+É a página onde os usuários e empresas podem nos contatar  
+seja para suporte ou interesse em fazer da plataforma.
+
+<div>
+  <img height="400em" src="./img/wireframe-contacts.png">  
+</div>
+
+**Essa é uma amostra, para ver a tela completa acesse:** [Contacts-Page](https://marvelapp.com/prototype/7fjg35c/screen/86230999)

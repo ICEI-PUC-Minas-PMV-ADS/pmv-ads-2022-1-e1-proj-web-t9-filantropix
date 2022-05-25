@@ -44,42 +44,27 @@ afirmados na forma de personas e histórias de usuários.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A fim de buscar mais informações sobre os motivos e causas de uso dessas 
+pessoas à plataforma a ser desenvolvida, foram realizadas perguntas por meio de 
+entrevistas, tendo resultados demonstrados no quadro apresentado:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                 |PARA ... `MOTIVO/VALOR`                          |
+|--------------------|----------------------------------------------------|-------------------------------------------------|
+|Paula Renata        | Participar de alguma causa social sem sair de casa | Manter o isolamento social                      |
+|Paula Renata        | Ajudar em causas grandes internacionalmente        | Fortalecer a fé                                 |
+|André Luiz          | Incentivar jovens na carreira profissional         | Formar novos talentos e gerar empregos          |
+|André Luiz          | Atrelar a minha empresa a causas filantrópicas     | Aumentar a visibilidade de sua empresa          |
+|Jorge Aguiar        | Ajudar pessoas afetadas pela pandemia              | Cumprir com o dever moral que sente como médico |
+|Jorge Aguiar        | Encontrar mais fácilmente causas para eu apoiar    | Poder ajudar mais as pessoas que precisam       |
+|Rebeca Fernandes    | Tranformar a vida de uma pessoal                   | Retribuição moral e pessoal                     |
+|Rebeca Fernandes    | Contribuir com instituições de ajuda               | Poder ajudar sem que eu tenha conhecimento      |
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
-### Requisitos Funcionais
-
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
-
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+Os propósitos funcionais da plataforma serão denotados por intermédio da
+apresentação de duas categorias diferentes de requisitos (funcionais e não funcionais) 
+que indicará as características que a plataforma demonstrará de maneira total. Sendo 
+apresentados a seguir.
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
@@ -90,22 +75,46 @@ Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Cla
   correspondem a uma característica técnica, seja de usabilidade,
   desempenho, confiabilidade, segurança ou outro (ex: suporte a
   dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+
+### Requisitos Funcionais
+
+|ID    | Descrição do Requisito                            | Prioridade |
+|------|---------------------------------------------------|------------|
+|RF-001| Página de apresentação                            | ALTA       | 
+|RF-002| Página de contribuição rápida                     | ALTA       |
+|RF-003| Página de colaboradores                           | ALTA       |
+|RF-004| Página de cadastro                                | ALTA       |
+|RF-005| Página de contruições direcionadas                | ALTA       |
+|RF-006| Informações sobre os produtos para contribuição   | ALTA       |
+|RF-007| Permitir pagamentos via cartão, pix, e boleto     | ALTA       |
+|RF-008| Página de contatos                                | ALTA       |
+|RF-009| Sistema de recompensa                             | MÉDIA      |
+|RF-010| Opção de recebimento do comprovante               | MÉDIA      |
+|RF-011| Opção de recebimento de informativos por email    | BAIXA      |
+|RF-012| Desvinculo da plataforma                          | BAIXA      |
+
+
+### Requisitos não Funcionais
+
+|ID    | Descrição do Requisito                            | Prioridade |
+|------|---------------------------------------------------|------------|
+|RNF-01| Acessível a todas as idades                       | ALTA       | 
+|RNF-02| O Site deve ter elementos de acessibilidade       | ALTA       | 
+|RNF-03| O Site deve funcionar em dispositivos móveis      | ALTA       | 
+|RNF-04| Guardar dados de doações para fins de segurança   | ALTA       | 
+|RNF-05| Verificar autenticidade dos usuários              | ALTA       | 
+|RNF-06| O Site deverá ser leve visualmente                | MÉDIA      | 
+|RNF-07| O Site irá utilizar cache do navegador            | BAIXA      | 
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como  
+obrigações claras para o desenvolvimento do projeto em questão são apresentadas   
+na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|ID   | Restrição                                                             |
+|-----|-----------------------------------------------------------------------|
+|RE-01| O projeto deverá ser entregue até o final do semestre                 |
+|RE-02| O Site deve apenas utilizar as tecnologias básicas da web no Frontend |
+|RE-03| O Projeto deve ser feito apenas por integrantes do grupo              |
+|RE-04| O Projeto deve utilizar apenas serviços com licenças Permissivas      |
