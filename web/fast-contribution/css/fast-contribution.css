@@ -2,6 +2,12 @@ header {
     border-bottom: 1px solid var(--theme-colors-aliceBlue);
 }
 
+.btn-bd-primary {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+
+    }
 .logo-image {
     width: 100px;
     margin: 20px 0;
@@ -35,14 +41,14 @@ header {
 }
   
 .forms{
-    border-color: blueviolet;
+    border-color: #9590f7;
     border-radius: 20px;
-    
-}
+    }
 
 @media screen and (max-width: 900px) {
 
     .presentation h2 {
         font-size: 14px;
+        
     }
 }
