@@ -59,22 +59,25 @@
                 </div>
                 <div class="form-group">
                     <label for="msg"><strong>Insira uma mensagem de amor:</strong></label>
-                    <textarea class="form-control forms" name="Message" id="msg" cols="30" rows="10" placeholder="Insira sua mensagem" required></textarea>
+                    <textarea class="form-control forms" name="Message" id="msg" cols="30" rows="10"
+                        placeholder="Insira sua mensagem" required></textarea>
                 </div>
                 <br>
-                    <div class="form-group my-3">
+                <div class="form-group my-3">
                     <label for="val"><strong>Escolha um valor:</strong></label> <br>
                     <button id="bt1" type="button" class="btn-bd-primary btn-lg">R$50.00</button>
                     <button id="bt2" type="button" class="btn-bd-primary btn-lg">150,00</button>
                     <button id="bt3" type="button" class="btn-bd-primary btn-lg">R$300</button>
                     <button id="bt4" type="button" class="btn-bd-primary btn-lg">R$500,00</button>
                     <button id="bt5" type="button" class="btn-bd-primary btn-lg">R$1000,00</button>
-                    </div> 
-                    <div><input id="value" class="form-control forms" name="Outros" type="text" placeholder="Valor selecionado" required></div>
+                </div>
+                <div><input id="value" class="form-control forms" name="Outros" type="text"
+                        placeholder="Valor selecionado" required></div>
                 <br>
                 <div class="form-group">
                     <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
-                    <input class="form-control forms" id="Causa1" name="Causa" list="Causas" placeholder="Causas Independentes">
+                    <input class="form-control forms" id="Causa1" name="Causa" list="Causas"
+                        placeholder="Causas Independentes" required>
                     <datalist id="Causas">
                         <option value="Hospital Esperança"></option>
                         <option value="Grupo Mais Ajuda/Porto Rico"></option>
@@ -90,7 +93,8 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <input class="form-control forms" name="Causa patrocinada" list="Causas patrocinadas" placeholder="Causas Patrocinadas">
+                    <input class="form-control forms" name="Causa patrocinada" list="Causas patrocinadas"
+                        placeholder="Causas Patrocinadas" required>
                     <datalist id="Causas patrocinadas">
                         <option value="Outback contra a fome"></option>
                         <option value="Itaú contra o frio"></option>
@@ -104,21 +108,21 @@
                 <br>
                 <div class="form-group">
                     <label for="pgto"><strong>Forma de Pagamento:</strong></label> <br>
-                    <input  id="pgto" name="valor" type="radio" value="Pix"> Pix
+                    <input id="pgto" name="valor" type="radio" value="Pix"> Pix
                     <input name="valor" type="radio" value="Cartão"> Cartão de Crédito
                     <input name="valor" type="radio" value="Boleto"> Boleto
                 </div>
                 <br>
                 <button type="submit" class="btn-lg btn-primary">Finalizar</button>
-                
+
             </form>
         </section>
 
         <footer>
             <div class="d-flex justify-content-center py-4 mx-5 w-100">
-               
-                  <p class="mx-5">&copy; 2022 Filantropix, Inc. All rights reserved.</p>
-            
+
+                <p class="mx-5">&copy; 2022 Filantropix, Inc. All rights reserved.</p>
+
         </footer>
     </main>
 
