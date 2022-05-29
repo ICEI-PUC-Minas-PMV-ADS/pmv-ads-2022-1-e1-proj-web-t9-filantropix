@@ -31,3 +31,9 @@ function addEventListener() {
 
 }
 addEventListener();
+
+const input = document.querySelector('#value')
+
+console.log(input)
+
+input.disabled = true

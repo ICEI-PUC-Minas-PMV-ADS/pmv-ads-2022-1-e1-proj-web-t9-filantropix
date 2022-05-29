@@ -41,6 +41,15 @@ header {
 
 }
 
+input:focus {
+    border-color: #9590f7 !important;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+
 .forms {
     border-color: #9590f7;
     border-radius: 20px;

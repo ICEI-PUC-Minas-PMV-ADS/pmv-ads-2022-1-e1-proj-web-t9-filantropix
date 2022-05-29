@@ -60,7 +60,7 @@
                 <div class="form-group">
                     <label for="msg"><strong>Insira uma mensagem de amor:</strong></label>
                     <textarea class="form-control forms" name="Message" id="msg" cols="30" rows="10"
-                        placeholder="Insira sua mensagem" required></textarea>
+                        placeholder="Insira sua mensagem" maxlength="200"></textarea>
                 </div>
                 <br>
                 <div class="form-group my-3">
@@ -70,6 +70,7 @@
                     <button id="bt3" type="button" class="btn-bd-primary btn-lg">R$300</button>
                     <button id="bt4" type="button" class="btn-bd-primary btn-lg">R$500,00</button>
                     <button id="bt5" type="button" class="btn-bd-primary btn-lg">R$1000,00</button>
+                    <span></span>
                 </div>
                 <div><input id="value" class="form-control forms" name="Outros" type="text"
                         placeholder="Valor selecionado" required></div>
@@ -90,6 +91,7 @@
                         <option value="Arquitetos voluntários"></option>
                         <option value="Brasil sem fome"></option>
                     </datalist>
+                    <span></span>
                 </div>
                 <br>
                 <div class="form-group">
@@ -108,7 +110,7 @@
                 <br>
                 <div class="form-group">
                     <label for="pgto"><strong>Forma de Pagamento:</strong></label> <br>
-                    <input id="pgto" name="valor" type="radio" value="Pix"> Pix
+                    <input id="pgto" name="valor" type="radio" value="Pix" required> Pix
                     <input name="valor" type="radio" value="Cartão"> Cartão de Crédito
                     <input name="valor" type="radio" value="Boleto"> Boleto
                 </div>
