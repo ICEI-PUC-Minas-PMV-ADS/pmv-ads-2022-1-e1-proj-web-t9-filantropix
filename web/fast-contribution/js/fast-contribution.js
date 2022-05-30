@@ -3,6 +3,12 @@ function choose_btn(element) {
     valueinput.value = element.currentTarget.value;
 
 }
+
+function form_desable(element) {
+    const input = document.getElementById(element.currentTarget.param);
+    input.disabled = true;
+}
+
 function addEventListener() {
     let btn1 = document.getElementById("bt1");
     btn1.value = 50;
@@ -29,6 +35,13 @@ function addEventListener() {
 
     btn5.addEventListener("click", choose_btn);
 
+    const Caus1 = document.getElementById("Causa1");
+    Caus1.param = "Causa2";
+    Caus1.addEventListener("input", form_desable);
+
+    const Caus2 = document.getElementById("Causa2");
+    Caus2.param = "Causa1";
+    Caus2.addEventListener("input", form_desable);
 }
 addEventListener();
 
@@ -37,3 +50,4 @@ const input = document.querySelector('#value')
 console.log(input)
 
 input.disabled = true
+
