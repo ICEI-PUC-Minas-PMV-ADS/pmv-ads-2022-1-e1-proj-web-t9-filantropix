@@ -52,73 +52,79 @@
 
     <main class="d-flex w-100 flex-column align-items-center">
         <section class="donate-section">
-            <div>
-                <h1 class="display-4 text-muted">Doe Aqui:</h1>
-                <p>Ecolha de forma rápida as opções e em segundos faça sua doação:</p>
-            </div>
+            <form action="../home/home.html">
+                <div>
+                    <h1 class="display-4 text-muted">Doe Aqui:</h1>
+                    <p>Ecolha de forma rápida as opções e em segundos faça sua doação:</p>
+                </div>
+                <div class="form-group">
+                    <label for="msg"><strong>Insira uma mensagem de amor:</strong></label>
+                    <textarea class="form-control forms" name="Message" id="msg" cols="30" rows="10"
+                        placeholder="Insira sua mensagem" maxlength="200"></textarea>
+                </div>
+                <br>
+                <div class="form-group my-3">
+                    <label for="val"><strong>Escolha um valor:</strong></label> <br>
+                    <button id="bt1" type="button" class="btn-bd-primary btn-lg">R$50.00</button>
+                    <button id="bt2" type="button" class="btn-bd-primary btn-lg">150,00</button>
+                    <button id="bt3" type="button" class="btn-bd-primary btn-lg">R$300</button>
+                    <button id="bt4" type="button" class="btn-bd-primary btn-lg">R$500,00</button>
+                    <button id="bt5" type="button" class="btn-bd-primary btn-lg">R$1000,00</button>
+                    <span></span>
+                </div>
+                <div><input id="value" class="form-control forms" name="Outros" type="text"
+                        placeholder="Valor selecionado" required></div>
+                <br>
+                <div class="form-group">
+                    <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
+                    <input class="form-control forms" id="Causa1" name="Causa" list="Causas"
+                        placeholder="Causas Independentes" required>
+                    <datalist id="Causas">
+                        <option value="Hospital Esperança"></option>
+                        <option value="Grupo Mais Ajuda/Porto Rico"></option>
+                        <option value="We Can/Guerra da Ucrânia"></option>
+                        <option value="Campanha do agasalho"></option>
+                        <option value="Amigos do bem"></option>
+                        <option value="Mães das favelas"></option>
+                        <option value="Unidos contra a COVID-19"></option>
+                        <option value="HC com vida"></option>
+                        <option value="Arquitetos voluntários"></option>
+                        <option value="Brasil sem fome"></option>
+                    </datalist>
+                    <span></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="form-control forms" id="Causa2" name="Causa patrocinada" list="Causas patrocinadas"
+                        placeholder="Causas Patrocinadas" required>
+                    <datalist id="Causas patrocinadas">
+                        <option value="Outback contra a fome"></option>
+                        <option value="Itaú contra o frio"></option>
+                        <option value="Renner contra violência feminina"></option>
+                        <option value="Uci incentivo a cultura"></option>
+                        <option value="Apple Care about the future"></option>
+                        <option value="Vivo internet para todos"></option>
+                        <option value="Microsoft TecTeens"></option>
+                    </datalist>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="pgto"><strong>Forma de Pagamento:</strong></label> <br>
+                    <input id="pgto" name="valor" type="radio" value="Pix" required> Pix
+                    <input name="valor" type="radio" value="Cartão"> Cartão de Crédito
+                    <input name="valor" type="radio" value="Boleto"> Boleto
+                </div>
+                <br>
+                <button type="submit" class="btn-lg btn-primary">Finalizar</button>
 
-            <div class="form-group">
-                <label for="msg"><strong>Insira uma mensagem de amor:</strong></label>
-                <textarea class="form-control forms" name="Message" id="msg" cols="30" rows="10"></textarea placeholder="Insira sua mensagem">
-            </div>
-            <br>
-           <div class="form-group">
-                <label for="val"><strong>Escolha um valor:</strong></label> <br>
-                <input id="val" name="Valor" type="radio" value="R$50,00"> R$50,00
-                <input name="Valor" type="radio" value="R$100,00"> R$100,00
-                <input name="Valor" type="radio" value="R$200,00"> R$200,00
-                <input name="Valor" type="radio" value="R$300,00"> R$300,00
-                <input name="Valor" type="radio" value="R$500,00"> R$500,00
-                <input name="Valor" type="radio" value="Outros"> Outros
-                <input class="form-control forms" name="Outros" type="text" placeholder="Outros Valores">
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
-                <input class="form-control forms" id="Causa1" name="Causa" list="Causas" placeholder="Causas Independentes">
-                <datalist id="Causas">
-                    <option value="Hospital Esperança"></option>
-                    <option value="Grupo Mais Ajuda/Porto Rico"></option>
-                    <option value="We Can/Guerra da Ucrânia"></option>
-                    <option value="Campanha do agasalho"></option>
-                    <option value="Amigos do bem"></option>
-                    <option value="Mães das favelas"></option>
-                    <option value="Unidos contra a COVID-19"></option>
-                    <option value="HC com vida"></option>
-                    <option value="Arquitetos voluntários"></option>
-                    <option value="Brasil sem fome"></option>
-                </datalist>
-            </div>
-            <br>
-            <div class="form-group">
-                <input class="form-control forms" name="Causa patrocinada" list="Causas patrocinadas" placeholder="Causas Patrocinadas">
-                <datalist id="Causas patrocinadas">
-                    <option value="Outback contra a fome"></option>
-                    <option value="Itaú contra o frio"></option>
-                    <option value="Renner contra violência feminina"></option>
-                    <option value="Uci incentivo a cultura"></option>
-                    <option value="Apple Care about the future"></option>
-                    <option value="Vivo internet para todos"></option>
-                    <option value="Microsoft TecTeens"></option>
-                </datalist>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="pgto"><strong>Forma de Pagamento:</strong></label> <br>
-                <input id="pgto" name="valor" type="radio" value="Pix"> Pix
-                <input name="valor" type="radio" value="Cartão"> Cartão de Crédito
-                <input name="valor" type="radio" value="Boleto"> Boleto
-            </div>
-            <br>
-            <button type="submit" class="btn-lg btn-primary">Finalizar</button>
-            
+            </form>
         </section>
 
         <footer>
             <div class="d-flex justify-content-center py-4 mx-5 w-100">
-               
-                  <p class="mx-5">&copy; 2022 Filantropix, Inc. All rights reserved.</p>
-            
+
+                <p class="mx-5">&copy; 2022 Filantropix, Inc. All rights reserved.</p>
+
         </footer>
     </main>
 
@@ -134,6 +140,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="../default/js/navbar.js"></script>
+    <script src="./js/fast-contribution.js"></script>
 </body>
 
 </html>
