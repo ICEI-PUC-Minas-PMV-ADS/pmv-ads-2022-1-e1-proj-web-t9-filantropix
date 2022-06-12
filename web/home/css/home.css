@@ -29,7 +29,6 @@
     align-items: center;
     border: 1px solid var(--theme-colors-charcoal-01);
     border-radius: 3px;
-    padding: 6px 20px;
 }
 
 .button-donate:hover {
@@ -41,6 +40,8 @@
     font-family: var(--theme-fonts-abrilFatface);
     text-decoration: none;
     color: var(--theme-colors-charcoal-01);
+    width: 100%;
+    padding: 6px 20px;
 }
 
 .button-donate:hover a {
