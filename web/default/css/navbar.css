@@ -37,7 +37,6 @@
     display: flex;
     align-items: center;
     height: 25px;
-    padding: 3px 6px;
 }
 
 .nav-item:hover {
@@ -49,6 +48,7 @@
     font-size: 1.8rem;
     font-family: var(--theme-fonts-lato);
     color: var(--theme-colors-charcoal-04);
+    padding: 3px 6px;
 }
 
 @media screen and (max-width: 768px) {
@@ -101,5 +101,6 @@
     .nav-item a {
         color: var(--theme-colors-aliceBlue);
         font-size: 1.6rem;
+        width: 100%;
     }
 }
