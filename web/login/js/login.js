@@ -1,7 +1,22 @@
-function OnInput_inputPassword() {
-    const elem = document.getElementById('input-password');
-    const value = elem.value;
+function loginIn(event) {
+
+    event.preventDefault();
+    
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+
+    console.log('in login');
+
+    let response = Security.tryLoginIn(emailInput.value, passwordInput.value);
+
+    if (response.type == Response.userNotFind) {
+        alert('usuário não encontrado');
+        return;
+    }
+
+    window.location.href = '../home/home.html';
 }
 
-const inputPassword = document.getElementById('input-password');
-inputPassword.oninput = OnInput_inputPassword();
+
+let element = document.getElementById('loginIn');
+element.addEventListener('submit', loginIn);
