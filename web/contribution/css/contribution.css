@@ -13,10 +13,6 @@
     object-position: 60% 60%;
 }
 
-.logo-image {
-    width: 100px;
-    margin: 20px 0;
-}
 
 .main-case {
     margin: 20px 10px;
@@ -27,6 +23,15 @@
     background-color: #FBFCFF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
+}
+
+#carrosel-font-label1 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    color: #f70707;
+    margin: 10px;
 }
 
 .main-case h3 {
