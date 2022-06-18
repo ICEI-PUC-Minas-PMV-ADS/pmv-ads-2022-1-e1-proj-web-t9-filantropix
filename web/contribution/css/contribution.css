@@ -107,3 +107,24 @@
     background-color: #bfc8ff;
     color: var(--theme-colors-aliceBlue);
 }
+
+.btn-bd-primary {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+
+}
+
+input:focus {
+    border-color: #9590f7 !important;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+
+.forms {
+    border-color: #9590f7;
+    border-radius: 20px;
+}
