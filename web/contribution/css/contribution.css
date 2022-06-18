@@ -86,6 +86,14 @@
     font-family: 'Akshar', sans-serif;
 }
 
+.modal-title {
+    font-family: 'Akshar', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #9590f7;
+    font-weight: bold;
+}
+
 .btn-login {
     background-color: #9590f7;
     color: var(--theme-colors-aliceBlue);
