@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="css/contribution.css">
     <title>contribution-Page</title>
 </head>
-                <!--NAVBAR-->
+<!--NAVBAR-->
+
 <body>
     <header>
         <nav class="navbar">
@@ -40,7 +41,7 @@
 
     <main>
 
-                <!--Carrosel-->
+        <!--Carrosel-->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -87,7 +88,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-                <!--INICIO DAS CAMPANHAS (CAMPANHAS INDEPENDENTES)-->
+        <!--INICIO DAS CAMPANHAS (CAMPANHAS INDEPENDENTES)-->
         <div class="d-flex w-100 justify-content-center b-top-beau-blue b-bottom-beau-blue p-3">
             <h2 class="section-title">Contribuições<br>Causas Independentes</h2>
         </div>
@@ -141,7 +142,7 @@
                 <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
-                    <!--CAMPANHAS PATROCINADAS -->
+            <!--CAMPANHAS PATROCINADAS -->
             <div class="d-flex w-100 justify-content-center b-top-beau-blue b-bottom-beau-blue p-3">
                 <h2 class="section-title">Contribuições<br>Causas Patrocinadas</h2>
             </div>
@@ -197,79 +198,72 @@
             </article>
         </section>
 
-                        <!--MODAL-->
-        <div class="modal" id="siteModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
+        <!--MODAL-->
+        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-fullscreen" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title">Você está a um passo de ajudar!</h5>
+                        <h5 class="display-4 text-muted d-flex w-100 flex-column align-items-center">Você está a um
+                            passo de ajudar!</h5>
                         <button type="button" class="btn btn-close" data-bs-dismiss="modal">
                         </button>
                     </div>
 
                     <div class="modal-body d-flex w-100 flex-column align-items-center">
-                            <section class="donate-section">
-                                <form action="../home/home.html">
-                                    <div>
-                                        <h1 class="display-4 text-muted">Doe Aqui:</h1>
-                                        <p>Ecolha de forma rápida as opções e em segundos faça sua doação:</p>
-                                    </div>
-                                    <br>
-                                    <div class="form-group my-3">
-                                        <label for="val"><strong>Escolha um valor:</strong></label> <br>
-                                        <button id="bt1" type="button" class="btn-bd-primary btn-lg">R$50.00</button>
-                                        <button id="bt2" type="button" class="btn-bd-primary btn-lg">150,00</button>
-                                        <button id="bt3" type="button" class="btn-bd-primary btn-lg">R$300</button>
-                                        <button id="bt4" type="button" class="btn-bd-primary btn-lg">R$500,00</button>
-                                        <button id="bt5" type="button" class="btn-bd-primary btn-lg">R$1000,00</button>
-                                    </div>
-                                    <div><input id="value" class="form-control forms" name="Outros" type="text"
-                                            placeholder="Valor selecionado" required></div>
-                                    <br>
-                                    <div class="form-group">
-                                        <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
-                                        <input class="form-control forms" id="Causa1" name="Causa" list="Causas"
-                                            placeholder="Causas Independentes" required>
-                                        <datalist id="Causas">
-                                            <option value="Hospital Esperança"></option>
-                                            <option value="Grupo Mais Ajuda/Porto Rico"></option>
-                                            <option value="We Can/Guerra da Ucrânia"></option>
-                                            <option value="Campanha do agasalho"></option>
-                                            <option value="Amigos do bem"></option>
-                                            <option value="Mães das favelas"></option>
-                                            <option value="Unidos contra a COVID-19"></option>
-                                            <option value="HC com vida"></option>
-                                            <option value="Arquitetos voluntários"></option>
-                                            <option value="Brasil sem fome"></option>
-                                        </datalist>
-                                        <span></span>
-                                    </div>
-                                    <br>
-                                    <div class="form-group">
-                                        <input class="form-control forms" id="Causa2" name="Causa patrocinada" list="Causas patrocinadas"
-                                            placeholder="Causas Patrocinadas" required>
-                                        <datalist id="Causas patrocinadas">
-                                            <option value="Outback contra a fome"></option>
-                                            <option value="Itaú contra o frio"></option>
-                                            <option value="Renner contra violência feminina"></option>
-                                            <option value="Uci incentivo a cultura"></option>
-                                            <option value="Apple Care about the future"></option>
-                                            <option value="Vivo internet para todos"></option>
-                                            <option value="Microsoft TecTeens"></option>
-                                        </datalist>
-                                    </div>
+                        <section class="donate-section">
+                            <form>
+                                <div>
+                                    <h1 class="modal-title">É com muito amor que receberemos a sua doação:</h1>
+                                    <p class="modal-title">Preencha os campos escolha a causa que você quer apoiar e
+                                        faça sua contribuição:</p>
+                                </div>
+                                <br>
+                                <div class="form-group my-3">
+                                    <label for="val"><strong>Escolha um valor:</strong></label> <br>
+                                    <button id="bt1" type="button" class="btn-bd-primary btn-lg">R$50.00</button>
+                                    <button id="bt2" type="button" class="btn-bd-primary btn-lg">150,00</button>
+                                    <button id="bt3" type="button" class="btn-bd-primary btn-lg">R$300</button>
+                                    <button id="bt4" type="button" class="btn-bd-primary btn-lg">R$500,00</button>
+                                    <button id="bt5" type="button" class="btn-bd-primary btn-lg">R$1000,00</button>
+                                </div>
+                                <div><input id="value" class="form-control forms" name="Outros" type="text"
+                                        placeholder="Valor selecionado" required></div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
+                                    <input class="form-control forms" id="Causa1" name="Causa" list="Causas-independentes"
+                                        placeholder="Causas Independentes" required>
+                                    <datalist id="Causas-independentes">
+                                        <option value="Hospital Esperança"></option>
+                                        <option value="Grupo Mais Ajuda/Porto Rico"></option>
+                                        <option value="We Can/Guerra da Ucrânia"></option>
+                                        <option value="Mães das favelas"></option>
+                                    </datalist>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input class="form-control forms" id="Causa2" name="Causa-patrocinada"
+                                        list="Causas-patrocinadas" placeholder="Causas-Patrocinadas" required>
+                                    <datalist id="Causas-patrocinadas">
+                                        <option value="Outback contra a fome"></option>
+                                        <option value="Apple Red Campanha contra a AIDS"></option>
+                                        <option value="Vivo Selfie internet para todos"></option>
+                                        <option value="Microsoft TecTeens"></option>
+                                    </datalist>
+                                </div>
+                            </form>
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-login" data-bs-dismiss="modal">Finalizar</button>
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Finalizar</button>
                     </div>
 
 
     </main>
 
 
-                    <!--REDES SOCIAIS-->
+    <!--REDES SOCIAIS-->
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">

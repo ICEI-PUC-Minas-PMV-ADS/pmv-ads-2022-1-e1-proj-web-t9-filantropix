@@ -103,6 +103,16 @@
 
 }
 
+.btn-modal {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+    margin: 0 auto;
+
+}
+
 .btn-login:hover {
     background-color: #bfc8ff;
     color: var(--theme-colors-aliceBlue);
