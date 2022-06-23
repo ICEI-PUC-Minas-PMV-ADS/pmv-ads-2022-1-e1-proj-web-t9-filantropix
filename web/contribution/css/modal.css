@@ -54,9 +54,12 @@ input:invalid {
 }
 
 @media (min-width:300px) and (max-width: 600px) {
-    .donation-section, .modal-pic, .forms{
+
+    .donation-section,
+    .modal-pic,
+    .forms {
         width: 100%;
         align-items: center;
-        
+
     }
 }
