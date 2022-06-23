@@ -5,14 +5,6 @@
 }
 
 
-.carrosel-img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: 60% 60%;
-}
-
-
 .main-case {
     margin: 20px 10px;
     height: 600px;
@@ -24,52 +16,6 @@
 
 }
 
-#carrosel-font-label1 {
-    font-family: 'Akshar', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 18px;
-    color: #f70707;
-    margin: 10px;
-}
-
-#carrosel-font-label2 {
-    font-size: 15px;
-    font-family: 'Akshar', sans-serif;
-    color: black;
-
-}
-
-#carrosel-font-label3 {
-    font-family: 'Akshar', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 18px;
-    color: white;
-    margin: 10px;
-}
-
-#carrosel-font-label4 {
-    font-size: 15px;
-    font-family: 'Akshar', sans-serif;
-    color: white;
-
-}
-
-#carrosel-font-label5 {
-    font-family: 'Akshar', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 18px;
-    color: blue;
-    margin: 10px;
-}
-
-#carrosel-font-label6 {
-    font-size: 15px;
-    font-family: 'Akshar', sans-serif;
-    color: black;
-}
 
 .main-case h3 {
     font-family: 'Akshar', sans-serif;
@@ -79,6 +25,7 @@
     margin: 10px;
 }
 
+
 .main-case p {
     font-size: 15px;
     height: 200px;
@@ -86,13 +33,6 @@
     font-family: 'Akshar', sans-serif;
 }
 
-.modal-title {
-    font-family: 'Akshar', sans-serif;
-    font-style: italic;
-    font-size: 18px;
-    color: #9590f7;
-    font-weight: bold;
-}
 
 .btn-login {
     background-color: #9590f7;
@@ -100,57 +40,18 @@
     border-radius: 10px;
     width: 80%;
     margin: 0 auto;
-
 }
 
-.btn-modal {
-    background-color: #9590f7;
-    color: var(--theme-colors-aliceBlue);
-    border-radius: 10px;
-    width: 25%;
-    height: 30px;
-    margin: 0 auto;
-
-}
 
 .btn-login:hover {
     background-color: #bfc8ff;
     color: var(--theme-colors-aliceBlue);
 }
 
+
 .btn-bd-primary {
     background-color: #9590f7;
     color: var(--theme-colors-aliceBlue);
     border-radius: 10px;
 
-}
-
-input:focus {
-    border-color: #9590f7 !important;
-}
-
-input:invalid {
-    border-color: red;
-}
-
-.donation-section {
-    padding: 40px 0 0;
-    width: 80%;
-
-}
-
-.forms {
-    border-color: #9590f7;
-    border-radius: 20px;
-}
-
-.modal-pic {
-    width: 600px;
-    height: 300px;
-}
-
-.modal-pic img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
 }

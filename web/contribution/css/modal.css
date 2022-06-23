@@ -1,0 +1,62 @@
+.modal-title {
+    font-family: 'Akshar', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #9590f7;
+    font-weight: bold;
+}
+
+
+.donation-section {
+    padding: 40px 0 0;
+    width: 80%;
+
+}
+
+
+.modal-pic {
+    width: 600px;
+    height: 300px;
+}
+
+
+.modal-pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.forms {
+    border-color: #9590f7;
+    border-radius: 20px;
+}
+
+
+input:focus {
+    border-color: #9590f7 !important;
+}
+
+
+input:invalid {
+    border-color: red;
+}
+
+
+.btn-modal {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+    width: 25%;
+    height: 30px;
+    margin: 0 auto;
+
+}
+
+@media (min-width:300px) and (max-width: 600px) {
+    .donation-section, .modal-pic, .forms{
+        width: 100%;
+        align-items: center;
+        
+    }
+}
