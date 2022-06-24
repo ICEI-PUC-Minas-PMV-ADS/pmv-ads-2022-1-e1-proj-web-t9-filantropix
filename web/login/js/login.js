@@ -5,8 +5,6 @@ function loginIn(event) {
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('password');
 
-    console.log('in login');
-
     let response = Security.tryLoginIn(emailInput.value, passwordInput.value);
 
     if (response.type == Response.userNotFind) {
