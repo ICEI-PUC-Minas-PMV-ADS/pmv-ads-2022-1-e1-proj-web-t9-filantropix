@@ -37,22 +37,22 @@ class Security {
         let jsonAccounts = localStorage.getItem('accounts');
 
         if (!jsonAccounts) {
-            return new Response(Response.userNotFind, null);
+            return new Response(Response.userNotFound, null);
         }
 
         let accounts = JSON.parse(jsonAccounts);
         let encryptPass = CryptoJS.SHA1(pass).toString();
-        let response = new Response(Response.userNotFind, null);
+        let response = new Response(Response.userNotFound, null);
         
         accounts.forEach(element => {
             if ((element.pass == encryptPass) &&
                 (element.email == email)) {
                     response.account = element;
-                    response.type = Response.userFind;
+                    response.type = Response.userFound;
             }
         });
 
-        if (response.type == Response.userFind) {
+        if (response.type == Response.userFound) {
             this.setCurrentUser(response.account);
         }
 
@@ -62,10 +62,11 @@ class Security {
 
 class Account {
 
-    constructor(name, pass, email) {
+    constructor(id, name, pass, email) {
         this.name = name;
         this.pass = pass;
         this.email = email;
+        this.id = id;
     }
 
     changeName(newName) {
@@ -75,8 +76,8 @@ class Account {
 
 class Response {
 
-    static userNotFind = 'response_NotFindUser';
-    static userFind = 'response_userFind';
+    static userNotFound = 'response_NotFoundUser';
+    static userFound = 'response_userFound';
 
     constructor(type, account) {
         this.account = account;
