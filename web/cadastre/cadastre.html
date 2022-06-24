@@ -16,6 +16,14 @@
     <title>Cadastre-se</title>
 </head>
 <body>
+
+  <div id="top-msg-container" class="top-msg">
+    <div class="top-msg-inner">
+      <p>Usuário criado com sucesso!!</p>
+    </div>
+    <div id="top-msg-close-btn" class="top-msg-close" style="  cursor: pointer;">&#10005;</div>
+  </div>
+
     <header>
         <nav class="navbar">
           <h1 class="logo">Filantropix</h1>
@@ -36,7 +44,7 @@
               <section class="cadastre-container">
                   <img src="./assets/cadastre-image.jpg" alt="Ilustração de login"> 
                   <div class="form-container">
-                      <form class="cadastre-form">
+                      <form id="cadastre-form-obj" class="cadastre-form">
                           <p class="lead fw-normal mb-3 me-3">Crie sua conta</p>
                           <div class="form-outline mb-4">
                             <input type="text" placeholder="Nome Sobrenome" id="name" class="form-control" required/>
@@ -49,7 +57,7 @@
                           </div>
                         
                           <div class="form-outline mb-4">
-                            <input type="password" minlength="10" placeholder="password" id="password" class="form-control" required/>
+                            <input type="password" minlength="4" placeholder="password" id="password" class="form-control" required/>
                             <label class="form-label" for="password">Password</label>
                           </div>
                         
