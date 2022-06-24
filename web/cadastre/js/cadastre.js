@@ -9,3 +9,4 @@ function cadastre() {
 
 let element = document.getElementById('create-account-button');
 element.addEventListener('click', cadastre);
+
