@@ -50,6 +50,7 @@ input:invalid {
     width: 25%;
     height: 30px;
     margin: 0 auto;
+    border: none;
 
 }
 
