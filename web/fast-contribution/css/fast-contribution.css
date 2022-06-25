@@ -9,6 +9,14 @@ header {
 
 }
 
+.btn-login {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .logo-image {
     width: 100px;
     margin: 20px 0;
@@ -53,6 +61,14 @@ input:invalid {
 .forms {
     border-color: #9590f7;
     border-radius: 20px;
+}
+
+.footer-title {
+    font-family: 'Akshar', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #9590f7;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {

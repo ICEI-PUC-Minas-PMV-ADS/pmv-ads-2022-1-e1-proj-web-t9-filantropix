@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="../default/css/style.css">
     <link rel="stylesheet" href="../default/css/navbar.css">
     <link rel="stylesheet" href="css/contribution.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/carrosel.css">
     <title>contribution-Page</title>
 </head>
+
 
 <body>
     <header>
@@ -39,7 +42,6 @@
     </header>
 
     <main>
-
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -94,18 +96,18 @@
         <section class="d-flex justify-content-center flex-wrap m-5">
             <article class="main-case">
                 <img class="w-100 h-50 object-fit-cover" src="assets/hospital-esperança2.jpg"
-                    alt="médica do hospital esperança">
+                    alt="criança em tratamento hospital esperança">
                 <h3>Campanha Banco de Sangue<br>Hospital Esperança</h3>
                 <p>O Hospital Esperança é referência em tratamentos contra o cancêr infantil. Nessa campanha
                     estamos levantando fundos para o crescimento do acervo de bolsas sanguineas
                     para as crianças através de eventos, publicidade e atividades que estimulem mais
                     as doações de sangue.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
-                <img class="w-100 h-50 object-fit-cover" src="./assets/cases-02.jpg"
-                    alt="grupo ajudando pessoas necessitadas">
+                <img class="w-100 h-50 object-fit-cover" src="./assets/cases-02.jpg" alt="Grupo de ajuda em ação">
                 <h3>Campanha de alimentação<br>Grupo Mais ajuda / Porto Rico</h3>
                 <p>Ajudando pessoas em baixas condições de vida, o Grupo
                     Mais ajuda tem sido extremamente importante para a população
@@ -113,30 +115,34 @@
                     Nessa campanha estamos levantando fundos para distribuir cestas basicas e alimentação
                     de qualidade às pessoas carentes vítimas da fome e da violência das zonas de baixa renda do país.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
                 <img class="w-100 h-50 object-fit-cover" src="assets/ukraine-soldier.jpg"
-                    alt="grupo ajudando na guerra da Ucrânia">
+                    alt="Soldado do exército ucraniano">
                 <h3>Campanha Suprindo Vidas<br>We can / Guerra da Ucrânia</h3>
                 <p>We can é um grupo de atuação voluntária que está
                     ajudando grupos de refugiados na Ucrânia durante está guerra.
                     Nessa campanha estamos levantando fundos e doações para suprir as vidas que dependem
                     dessa ajuda enquanto resistem às invasões com comida, água potável e suprimentos médicos.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
-                <img class="w-100 h-50 object-fit-cover" src="assets/fa250498-17a1-41f6-a4f7-c9052e375f9e.jpg"
-                    alt="médica do hospital esperança">
+                <img class="w-100 h-50 object-fit-cover" src="assets/mãe-das-favelas.jpg"
+                    alt="Grupo de ajuda da Campanha em ação">
                 <h3>Campanha Nasciemnto Solidário<br>Mães das favelas</h3>
                 <p>A entidade Mães das favelas é um grupo de ajuda comunitario sem fins lucraticos
                     que visa ajudar e melhorar a qualidade de vida das mães e seus bebês que vivem em comunidades
                     carentes. Nessa campanha estamos levantando fundos para doações de enxovais para mães de recém
                     nascidos.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
+
             <div class="d-flex w-100 justify-content-center b-top-beau-blue b-bottom-beau-blue p-3">
                 <h2 class="section-title">Contribuições<br>Causas Patrocinadas</h2>
             </div>
@@ -149,7 +155,8 @@
                     participarem do levantamento de fundos à campanha destinada a luta contra a AIDS em páises de alta
                     taxa de pobreza.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
                 <img class="w-100 h-50 object-fit-cover" src="assets/tecteens2new.jpg" alt="Microsoft TecTeens">
@@ -160,7 +167,8 @@
                     jovens carentes, premiando cada
                     doador com licenças gratuitas de ses softwares.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
                 <img class="w-100 h-50 object-fit-cover" src="assets/outbacksocial.jpeg" alt="Outback Social">
@@ -171,7 +179,8 @@
                     adultos em situação de rua, premiando cada
                     doador com vouchers de descontos em seus restaurantes.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
                 <img class="w-100 h-50 object-fit-cover" src="assets/vivo-selfie-2109-desk-942x791.jpg"
@@ -184,13 +193,84 @@
                     internet e acesso á informação a centenas de jovens e adultos que vivem em comunidades por meio de
                     internet gratuita.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block">Contribuir</button>
+                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                    data-bs-target="#siteModal">Contribuir</button>
             </article>
         </section>
 
+
+        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-fullscreen" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="display-4 text-muted d-flex w-100 flex-column align-items-center">Você está a um
+                            passo de ajudar!</h5>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal">
+                        </button>
+                    </div>
+
+                    <div class="modal-body d-flex w-100 flex-column align-items-center">
+                        <section class="donate-section">
+
+                            <div>
+                                <h1 class="modal-title">É com muito amor que receberemos a sua doação:</h1>
+                                <p class="modal-title">Preencha os campos, escolha a causa que você quer apoiar e
+                                    faça sua contribuição:</p>
+                            </div>
+
+                            <div class="modal-pic">
+                                <img src="assets/Payment.png" alt="Ilustração de pagamento">
+
+                            </div>
+
+                            <form action="">
+                                <div class="form-group my-3">
+                                    <label for="val"><strong>Escolha um valor:</strong></label> <br>
+                                    <button id="bt1" type="button" class="btn-bd-primary btn-lg">R$50.00</button>
+                                    <button id="bt2" type="button" class="btn-bd-primary btn-lg">150,00</button>
+                                    <button id="bt3" type="button" class="btn-bd-primary btn-lg">R$300</button>
+                                    <button id="bt4" type="button" class="btn-bd-primary btn-lg">R$500,00</button>
+                                    <button id="bt5" type="button" class="btn-bd-primary btn-lg">R$1000,00</button>
+                                </div>
+                                <div><input id="value" class="form-control forms" name="Outros" type="text"
+                                        placeholder="Valor selecionado" required></div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="Causa1"><strong>Selecione uma Causa:</strong></label> <br>
+                                    <input class="form-control forms" id="Causa1" name="Causa"
+                                        list="Causas-independentes" placeholder="Causas Independentes" required>
+                                    <datalist id="Causas-independentes">
+                                        <option value="Hospital Esperança"></option>
+                                        <option value="Grupo Mais Ajuda/Porto Rico"></option>
+                                        <option value="We Can/Guerra da Ucrânia"></option>
+                                        <option value="Mães das favelas"></option>
+                                    </datalist>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input class="form-control forms" id="Causa2" name="Causa-patrocinada"
+                                        list="Causas-patrocinadas" placeholder="Causas-Patrocinadas" required>
+                                    <datalist id="Causas-patrocinadas">
+                                        <option value="Outback contra a fome"></option>
+                                        <option value="Apple Red Campanha contra a AIDS"></option>
+                                        <option value="Vivo Selfie internet para todos"></option>
+                                        <option value="Microsoft TecTeens"></option>
+                                    </datalist>
+                                </div>
+                            </form>
+
+                        </section>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn-modal" data-bs-dismiss="modal">Pagamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
-
-
 
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -238,7 +318,7 @@
 
 
 
-
+    <script src="js/crontibution.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
