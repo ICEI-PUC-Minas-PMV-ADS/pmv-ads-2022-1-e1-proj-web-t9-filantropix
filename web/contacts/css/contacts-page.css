@@ -11,6 +11,7 @@
     --theme-fonts-lato: "Lato", sans-serif;
 }
 
+
 .container {
     display: flex;
     flex: 1;
@@ -20,6 +21,7 @@
 .navbar {
     height: 70px
 }
+
 
 .nav-title {
     display: flex;
@@ -39,21 +41,42 @@
     height: 230px;
     align-items: center;
     justify-content: center;
-
-    background-color: #dbdee3;
     margin: 0;
 }
 
 main {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .content {
     display: flex;
-    flex-direction: column;
+    max-width: 1200px;
     flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+   
+}
+
+.img-mkt{
+    width: 40%;
+
+}
+
+.img-mkt img {
+    width: 100%;
+
+}
+
+@media screen and (max-width:900px) {
+    .img-mkt {
+        width: 60%;
+    }
+   
 }
 
 .message {
@@ -62,16 +85,18 @@ main {
 
 .form-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    min-width: 200px;
+    width: 60%;
+    max-width: 500px;
+  
 }
 
 .form {
     display: flex;
     flex-direction: column;
-
-    width: 40%;
+    width: 100%;
 }
 
 .input-form {
@@ -92,11 +117,12 @@ main {
 
 .action {
     display: flex;
+    justify-content: center;
 }
 
 .donate {
-    background-color: var(--theme-colors-charcoal-01);
-    border: 1px solid var(--theme-colors-charcoal-01);
+    background-color: #717bb9;
+    border: none;
     width: 160px;
     height: 45px;
     border-radius: 5px;
@@ -105,4 +131,10 @@ main {
     font-size: 16px;
     margin-top: 10px;
     cursor: pointer;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: end;
 }
