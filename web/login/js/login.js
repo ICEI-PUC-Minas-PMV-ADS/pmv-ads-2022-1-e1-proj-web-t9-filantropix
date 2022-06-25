@@ -1,20 +1,15 @@
 function loginIn(event) {
 
-    event.preventDefault();
-    
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('password');
 
     let response = Security.tryLoginIn(emailInput.value, passwordInput.value);
 
-    if (response.type == Response.userNotFind) {
-        alert('usuário não encontrado');
-        return;
+    if (response.type == SecResponse.userNotFound) {
+        setMessage('Usuário não encontrado!');
+        window.location.reload();
+        return false;
     }
 
-    window.location.href = '../home/home.html';
+    return true;
 }
-
-
-let element = document.getElementById('loginIn');
-element.addEventListener('submit', loginIn);
