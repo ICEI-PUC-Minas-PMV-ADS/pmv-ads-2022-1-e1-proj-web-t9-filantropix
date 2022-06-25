@@ -1,29 +1,23 @@
-async function sleep(msec) {
-    return new Promise(resolve => setTimeout(resolve, msec));
-}
-
-async function showAlert() {
-    let element = document.getElementById('top-msg-container');
-    element.style.visibility = 'visible';
-
-    await sleep(1000);
-
-    element.style.visibility = 'hidden';
-}
-
 function cadastre(event) {
-
-    event.preventDefault();
 
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('password');
+    const response = Security.createUser(nameInput.value, passwordInput.value, emailInput.value);
+    const createAccountBtn = document.getElementById('create-account-button');
 
-    Security.createUser(nameInput.value, passwordInput.value, emailInput.value);
+    createAccountBtn.enable = false;
 
-    showAlert();
+    if (response.type == SecResponse.userExists) {
 
-    event.initEvent()
+        setMessage('Usuário já cadastrado!');      
+        window.location.reload();
+        return false;
+    }
+    else {
+        setMessage('Usuário cadastrado!');
+        return true;
+    }
 }
 
 function addEventListeners() {
@@ -34,7 +28,5 @@ function addEventListeners() {
     });
 }
 
-let element = document.getElementById('cadastre-form-obj');
-element.addEventListener('submit', cadastre);
 
 addEventListeners();
