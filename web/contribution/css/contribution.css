@@ -40,12 +40,14 @@
     border-radius: 10px;
     width: 80%;
     margin: 0 auto;
+    border: none;
 }
 
 
 .btn-login:hover {
     background-color: #bfc8ff;
     color: var(--theme-colors-aliceBlue);
+    border: none;
 }
 
 
@@ -53,5 +55,5 @@
     background-color: #9590f7;
     color: var(--theme-colors-aliceBlue);
     border-radius: 10px;
-
+    border: none;
 }
