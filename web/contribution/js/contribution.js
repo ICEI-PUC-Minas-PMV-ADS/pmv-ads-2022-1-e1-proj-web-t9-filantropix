@@ -2,13 +2,16 @@ function saveSelectedCause(cause) {
     localStorage.setItem('selected-cause', cause);
 }
 
-function saveContribution() {
-
-
-
+function getSelectedCause() {
+    return localStorage.getItem('selected-cause');
 }
 
+function saveContribution() {
 
+    const valueinput = document.getElementById("value"); 
+    const contribution = new Contribution(valueinput.value, getSelectedCause());
+    ContributionManager.setContribution(contribution);
+}
 
 function choose_btn(element) {
     let valueinput = document.getElementById("value");
@@ -58,8 +61,5 @@ function addEventListener() {
 addEventListener();
 
 const input = document.querySelector('#value')
-
-console.log(input)
-
 input.disabled = true
 

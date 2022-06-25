@@ -103,7 +103,7 @@
                     para as crianças através de eventos, publicidade e atividades que estimulem mais
                     as doações de sangue.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha Banco de Sangue / Hospital Esperança')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
@@ -115,7 +115,7 @@
                     Nessa campanha estamos levantando fundos para distribuir cestas basicas e alimentação
                     de qualidade às pessoas carentes vítimas da fome e da violência das zonas de baixa renda do país.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha de alimentação / Grupo Mais ajuda')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
@@ -127,7 +127,7 @@
                     Nessa campanha estamos levantando fundos e doações para suprir as vidas que dependem
                     dessa ajuda enquanto resistem às invasões com comida, água potável e suprimentos médicos.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha Suprindo Vidas / Guerra da Ucrânia')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
@@ -139,7 +139,7 @@
                     carentes. Nessa campanha estamos levantando fundos para doações de enxovais para mães de recém
                     nascidos.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha Nasciemnto Solidário / Mães das favelas')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
 
@@ -155,7 +155,7 @@
                     participarem do levantamento de fundos à campanha destinada a luta contra a AIDS em páises de alta
                     taxa de pobreza.
                 </p>
-                <button type="button" onclick="saveSelectedCause('Campanha Contra a AIDS')" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha Contra a AIDS / Apple Red')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
@@ -167,7 +167,7 @@
                     jovens carentes, premiando cada
                     doador com licenças gratuitas de ses softwares.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha de incentivo juvenil / Microsoft TecTeens')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
@@ -179,7 +179,7 @@
                     adultos em situação de rua, premiando cada
                     doador com vouchers de descontos em seus restaurantes.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha de alimentos / Outback Contra a Fome')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
             <article class="main-case">
@@ -193,21 +193,20 @@
                     internet e acesso á informação a centenas de jovens e adultos que vivem em comunidades por meio de
                     internet gratuita.
                 </p>
-                <button type="button" onclick="" class="btn btn-login btn-block" data-bs-toggle="modal"
+                <button type="button" onclick="saveSelectedCause('Campanha Social / Vivo Selfie')" class="btn btn-login btn-block" data-bs-toggle="modal"
                     data-bs-target="#siteModal">Contribuir</button>
             </article>
         </section>
 
 
-        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal fade modal-bd-radius" id="siteModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
                         <h5 class="display-4 text-muted d-flex w-100 flex-column align-items-center">Você está a um
                             passo de ajudar!</h5>
-                        <button type="button" class="btn btn-close" data-bs-dismiss="modal">
-                        </button>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body d-flex w-100 flex-column align-items-center">
@@ -224,6 +223,7 @@
 
                             </div>
 
+                            
                             <form action="../payment/payment.html" onsubmit="saveContribution()">
                                 <div class="form-group my-3">
                                     <label for="val"><strong>Escolha um valor:</strong></label> <br>
@@ -259,10 +259,9 @@
                                     </datalist>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn-modal" data-bs-dismiss="modal">Pagamento</button>
+                                    <button type="submit" class="btn-modal">Pagamento</button>
                                 </div>
                             </form>
-
                         </section>
                     </div>
 
@@ -332,6 +331,7 @@
         <script src="../default/js/message.js"></script>
     <script src="../default/js/security.js"></script>
     <script src="../default/js/navbar.js"></script>
+    <script src="../default/js/contribution.js"></script>
 </body>
 
 </html>

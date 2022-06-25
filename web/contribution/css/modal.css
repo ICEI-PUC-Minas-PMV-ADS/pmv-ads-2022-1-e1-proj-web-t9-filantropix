@@ -13,6 +13,9 @@
 
 }
 
+.modal-content {
+    border-radius: 20px;
+}
 
 .modal-pic {
     width: 600px;
@@ -47,6 +50,7 @@ input:invalid {
     background-color: #9590f7;
     color: var(--theme-colors-aliceBlue);
     border-radius: 10px;
+    border: none;
     width: 25%;
     height: 30px;
     margin: 0 auto;
