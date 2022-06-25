@@ -1,3 +1,15 @@
+function saveSelectedCause(cause) {
+    localStorage.setItem('selected-cause', cause);
+}
+
+function saveContribution() {
+
+
+
+}
+
+
+
 function choose_btn(element) {
     let valueinput = document.getElementById("value");
     valueinput.value = element.currentTarget.value;
