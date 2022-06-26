@@ -78,3 +78,30 @@ input:invalid {
 
     }
 }
+
+/* Footer */
+
+footer {
+    padding: 20px 0 0 0;
+    width: 100%;
+    border-top: 1px solid var(--theme-colors-aliceBlue);
+    margin-top: 20px;
+}
+
+.items-container {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 385px;
+    min-width: 300px;
+    width: 30%;
+}
+
+.items-container .copyright {
+    margin-bottom: 15px;
+}
+
+.items-container ul {
+    margin-bottom: 15px;
+}
