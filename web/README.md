@@ -19,3 +19,7 @@ O Site está hospedado no GitHub Pages. [Link](https://icei-puc-minas-pmv-ads.gi
   - RF-05: Página de contribuição por itens
   - RF-06: Apresentação das informações dos produtos
   - RF-08: Página de contatos
+
+### [2.0.0] - 26/06/2022
+#### Adicionando
+- Implementação dos requisitos funcionais:
