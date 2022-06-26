@@ -62,6 +62,11 @@ function applyValues(accountEmail, rewardNumber) {
     }
     else {
         rewardStatus.innerHTML = `Receber`;
+        rewardStatus.addEventListener('click', () => {
+            RewardManager.cleanReward(accountEmail, `reward-${rewardNumber}`);
+            setMessage('Recompensa recebida!!');
+            window.location.href = '../profile/profile.html';
+        })
     }
 }
 

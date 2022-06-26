@@ -82,4 +82,17 @@ class RewardManager {
             }
         });
     }
+
+    static cleanReward(accountEmail, rewardId) {
+        let jsonRewards = localStorage.getItem(`rewards-${accountEmail}`);
+        let rewards = JSON.parse(jsonRewards);
+
+        rewards.forEach(reward => {
+            if (reward.rewardId == rewardId) {
+                reward.currentPoints = 0;
+                reward.isCompleted = false;
+                localStorage.setItem(`rewards-${accountEmail}`, JSON.stringify(rewards));
+            }
+        });
+    }
 }

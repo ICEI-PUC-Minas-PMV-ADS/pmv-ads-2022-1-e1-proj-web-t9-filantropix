@@ -9,31 +9,39 @@ function form_desable(element) {
     input.disabled = true;
 }
 
+function saveContribution() {
+
+    const valueinput = document.getElementById("value"); 
+    const caseInput = document.getElementById('Causa1');
+    const caseInput2 = document.getElementById('Causa2');
+    
+    if (caseInput.value != "") {
+        const contribution = new Contribution(valueinput.value, caseInput.value, '../fast-contribution/assets/fast-contribution-image.jpg', null);
+        ContributionManager.setContribution(contribution);
+    }
+    else {
+        const contribution = new Contribution(valueinput.value, caseInput2.value, '../fast-contribution/assets/fast-contribution-image.jpg', null);
+        ContributionManager.setContribution(contribution);
+    }
+}
+
+function setValueFrom(btnValueNumber) {
+
+    const element = document.getElementById(`btnValue${btnValueNumber.toString()}`);
+    element.value = `R$${btnValueNumber},00`;
+    element.addEventListener('click', (element) => {
+        let valueinput = document.getElementById("value");
+        valueinput.value = element.currentTarget.value;
+    });
+}
+
+
 function addEventListener() {
-    let btn1 = document.getElementById("bt1");
-    btn1.value = 50;
-
-    btn1.addEventListener("click", choose_btn);
-
-    let btn2 = document.getElementById("bt2");
-    btn2.value = 150;
-
-    btn2.addEventListener("click", choose_btn);
-
-    let btn3 = document.getElementById("bt3");
-    btn3.value = 300;
-
-    btn3.addEventListener("click", choose_btn);
-
-    let btn4 = document.getElementById("bt4");
-    btn4.value = 500;
-
-    btn4.addEventListener("click", choose_btn);
-
-    let btn5 = document.getElementById("bt5");
-    btn5.value = 1000;
-
-    btn5.addEventListener("click", choose_btn);
+    setValueFrom(50);
+    setValueFrom(150);
+    setValueFrom(300);
+    setValueFrom(500);
+    setValueFrom(1000);
 
     const Caus1 = document.getElementById("Causa1");
     Caus1.param = "Causa2";
