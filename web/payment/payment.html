@@ -48,21 +48,23 @@
             <p id="contribution-value" class="contribution-value"></p>
           </div>
         </div>
-        <h3 class="reward-label">Recompensa desbloqueada</h3>
-
-        <article class="reward">
-          <div class="left-side">
-
-            <h2 id="reward-title" class="title"></h2>
-            <p id="reward-description" class="description"></p>
-
-            <div class="progress">
-              <p class="progress-info">Receber Recompensa</p>
-              <button id="reward-status" class="progress-status"></button>
+        <div id="reward-container">
+          <h3 class="reward-label">Recompensa desbloqueada</h3>
+  
+          <article class="reward">
+            <div class="left-side">
+  
+              <h2 id="reward-title" class="title"></h2>
+              <p id="reward-description" class="description"></p>
+  
+              <div class="progress">
+                <p class="progress-info">Receber Recompensa</p>
+                <button id="reward-status" class="progress-status"></button>
+              </div>
+  
             </div>
-
-          </div>
-        </article>
+          </article>
+        </div>
 
       </div>
 
@@ -71,7 +73,7 @@
           <div>
             <div class="col-lg-8 w-100">
               <h4 class="mb-3">Informações</h4>
-              <form onsubmit="finalizePayment()" action="../profile/profile.html" class="needs-validation">
+              <form id="paymentForm" class="needs-validation">
                <div class="row g-3">
                  <div class="col-sm-6">
                    <label for="firstName" class="form-label">Primeiro nome</label>
@@ -119,17 +121,17 @@
                    </div>           
                    <div class="col-md-6">
                      <label for="cc-number" class="form-label">Número do cartão</label>
-                     <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                     <input type="text" class="form-control" id="cc-number" placeholder='1234 5678 9123 4567' pattern='\d*' required>
                      <div class="invalid-feedback">O número do cartão é necessário</div>
                    </div>
                    <div class="col-md-3">
                      <label for="cc-expiration" class="form-label">Expiração</label>
-                     <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                     <input type="text" class="form-control" id="cc-expiration" placeholder="MM / YYYY" pattern="\d*" title='Card Expiration Date'  required>
                      <div class="invalid-feedback">Data de expiração é necessária</div>
                    </div>
                    <div class="col-md-3">
                      <label for="cc-cvv" class="form-label">CVV</label>
-                     <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                     <input type="text" class="form-control" id="cc-cvv" placeholder="123" pattern="\d*" title='CVC Code'  required>
                      <div class="invalid-feedback">O Código de segurança é necessário</div>
                    </div>
                  </div>
