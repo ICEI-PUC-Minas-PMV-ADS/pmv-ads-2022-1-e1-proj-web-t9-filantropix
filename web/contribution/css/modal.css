@@ -13,6 +13,14 @@
 
 }
 
+.donate-form {
+    margin-top: 20px;
+}
+
+.donate-form label {
+    margin-bottom: 6px;
+}
+
 .modal-content {
     border-radius: 20px;
 }
@@ -29,6 +37,9 @@
     height: 100%;
 }
 
+.modal-footer {
+    border: none;
+}
 
 .forms {
     border-color: #9590f7;
@@ -53,9 +64,12 @@ input:invalid {
     border: none;
     width: 25%;
     height: 30px;
-    margin: 0 auto;
+    margin: 20px auto;
     border: none;
+}
 
+.btn-modal:hover {
+    background-color: var(--theme-colors-lavenderBlue);
 }
 
 @media (min-width:300px) and (max-width: 600px) {

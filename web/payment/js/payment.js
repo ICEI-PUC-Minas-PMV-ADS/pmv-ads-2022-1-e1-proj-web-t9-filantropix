@@ -8,16 +8,14 @@ function sleep(ms) {
  }
 
 
-async function finalizePayment() {
-
-    await sleep(2000);
+function finalizePayment() {
 
     const causeReward = localStorage.getItem('cause-reward');
     const currentUser = Security.getCurrentUser();
 
     RewardManager.incrementReward(currentUser.email, causeReward);
 
-    window.location.href = '../profile/profile.html';
+    setMessage('Obrigado pela doação! S2');
 }
 
 function addEventListeners() {
@@ -50,7 +48,7 @@ function loadInformations() {
     causeTitle.innerHTML = contribution.cause;
 
     const contributionValue = document.getElementById('contribution-value');
-    contributionValue.innerHTML = `R\$${contribution.value},00`;
+    contributionValue.innerHTML = `${contribution.value}`;
 
     const currentUser = Security.getCurrentUser(); 
 

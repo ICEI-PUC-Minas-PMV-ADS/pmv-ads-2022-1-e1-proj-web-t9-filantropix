@@ -39,7 +39,7 @@
     <div class="main-container">
       <div class="informations">
         <div class="image">
-          <img id="cause-image" src="../contribution/assets/outbacksocial.jpeg">
+          <img id="cause-image" src="#">
         </div>
         <div class="container">
           <h3 id="cause-title"></h3>
@@ -70,34 +70,29 @@
         <div class="container payment-form">
           <div>
             <div class="col-lg-8 w-100">
-              <h4 class="mb-3">Billing address</h4>
-              <form class="needs-validation" novalidate>
+              <h4 class="mb-3">Informações</h4>
+              <form onsubmit="finalizePayment()" action="../profile/profile.html" class="needs-validation">
                <div class="row g-3">
                  <div class="col-sm-6">
-                   <label for="firstName" class="form-label">First name</label>
+                   <label for="firstName" class="form-label">Primeiro nome</label>
                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                    <div class="invalid-feedback">
-                     Valid first name is required.
+                     O primeiro nome é necessário.
                    </div>
                  </div>
                  <div class="col-sm-6">
-                   <label for="lastName" class="form-label">Last name</label>
+                   <label for="lastName" class="form-label">Sobrenome</label>
                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                   <div class="invalid-feedback">Valid last name is required.</div>
+                   <div class="invalid-feedback">O sobrenome é necessário.</div>
                  </div>
                  <div class="col-12">
-                   <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                   <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                   <div class="invalid-feedback">Please enter a valid email address for shipping updates.</div>
-                 </div>
-                 <hr class="my-4">                      
-                 <div class="form-check">
-                   <input type="checkbox" class="form-check-input" id="save-info">
-                   <label class="form-check-label" for="save-info">Save this information for next time</label>
-                 </div>
+                   <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                   <input type="email" class="form-control" id="email" placeholder="email@domain.com">
+                   <div class="invalid-feedback">Por favor entre com um email válido.</div>
+                 </div>                  
                  <div class="form-check">
                    <input type="checkbox" class="form-check-input" id="receive-info">
-                   <label class="form-check-label" for="receive-info">Receive donation infos</label>
+                   <label class="form-check-label" for="receive-info">Receber informações da doação</label>
                  </div>                 
                  <hr class="my-4">                   
                  <h4 class="mb-3">Payment</h4>               
@@ -117,29 +112,29 @@
                  </div>   
                  <div id="payment-method-fields" class="row gy-3">
                    <div class="col-md-6">
-                     <label for="cc-name" class="form-label">Name on card</label>
+                     <label for="cc-name" class="form-label">Nome no cartão</label>
                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                     <small class="text-muted">Full name as displayed on card</small>
-                     <div class="invalid-feedback">Name on card is required</div>
+                     <small class="text-muted">Nome completo que consta no cartão</small>
+                     <div class="invalid-feedback">O nome do cartão é necessário</div>
                    </div>           
                    <div class="col-md-6">
-                     <label for="cc-number" class="form-label">Credit card number</label>
+                     <label for="cc-number" class="form-label">Número do cartão</label>
                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                     <div class="invalid-feedback">Credit card number is required</div>
+                     <div class="invalid-feedback">O número do cartão é necessário</div>
                    </div>
                    <div class="col-md-3">
-                     <label for="cc-expiration" class="form-label">Expiration</label>
+                     <label for="cc-expiration" class="form-label">Expiração</label>
                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                     <div class="invalid-feedback">Expiration date required</div>
+                     <div class="invalid-feedback">Data de expiração é necessária</div>
                    </div>
                    <div class="col-md-3">
                      <label for="cc-cvv" class="form-label">CVV</label>
                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                     <div class="invalid-feedback">Security code required</div>
+                     <div class="invalid-feedback">O Código de segurança é necessário</div>
                    </div>
                  </div>
                  <hr class="my-4">
-                 <button type="button" onclick="finalizePayment()" class="btn-pay w-100 btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#siteModal">Pagar</button>
+                 <button type="submit" class="btn-pay w-100 btn btn-primary btn-lg">Pagar</button>
                </div>
               </form>
             </div>
@@ -148,7 +143,7 @@
       </div>
     </div>
 
-    <div class="modal fade modal-bd-radius" id="siteModal" tabindex="-1" role="dialog">
+    <dialog class="modal fade modal-bd-radius" id="siteModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body d-flex w-100 flex-column align-items-center">
@@ -157,7 +152,7 @@
           </div>           
         </div>
       </div>
-    </div>
+    </dialog>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
