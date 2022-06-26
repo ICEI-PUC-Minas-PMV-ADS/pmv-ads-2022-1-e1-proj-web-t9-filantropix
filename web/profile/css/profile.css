@@ -67,56 +67,6 @@ header {
     justify-content: space-between;
 }
 
-footer .items-container {
-    padding: 50px 0;
-    width: 100%;
-    margin-top: 60px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    border-top: 1px solid var(--theme-colors-aliceBlue);
-    border-bottom: 1px solid var(--theme-colors-aliceBlue);
-}
-
-footer .nav-item {
-    background-color: #fff;
-    align-items: flex-start;
-}
-
-.sections-container {
-    display: flex;
-    justify-content: space-between;
-    width: 230px;
-    margin: 0 40px;
-}
-
-.sections {
-    padding: 0;
-    list-style: none;
-}
-
-.section-item {
-    font-size: 18px;
-}
-
-.section-link {
-    text-decoration: none;
-}
-
-#newsletter-container {
-    margin: 20px 40px;
-    width: 300px;
-}
-
-.centralized-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 600px;
-}
-
-
 /* New classes */
 
 .user-section {
@@ -189,11 +139,15 @@ footer .nav-item {
 
 .btn-donate {
     font-size: 1.6rem;
-    background-color: var(--theme-colors-charcoal-04);
-    border: 1px solid var(--theme-colors-charcoal-04);
-    color: var(--theme-colors-aliceBlue);
     margin-top: 10px;
     width: 180px;
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+}
+
+.btn-donate:hover {
+    background-color: #bfc8ff;
+    color: var(--theme-colors-aliceBlue);
 }
 
 .btn-logoff {
@@ -208,11 +162,6 @@ footer .nav-item {
 
 .btn-logoff:hover {
     background-color: #bfc8ff;
-    color: var(--theme-colors-aliceBlue);
-}
-
-.btn-donate:hover {
-    background-color: var(--theme-colors-charcoal-01);
     color: var(--theme-colors-aliceBlue);
 }
 
@@ -233,6 +182,7 @@ footer .nav-item {
 @media screen and (max-width: 1000px) {
     .user-section {
         flex-direction: column;
+        padding: 40px 10px 0;
     }
 
     .donate-section {
@@ -383,11 +333,65 @@ footer .nav-item {
     .rewards-container {
         align-items: center;
         width: 100%;
-        margin: 0 20px;
     }
 
     .rewards-row {
         align-items: center;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 600px) {
+
+    .reward .progress-info {
+        font-size: 2rem;
+    }
+
+    .reward .progress-status {
+        width: 120px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .reward .progress {
+        flex-direction: column;
+    }
+
+    .reward .progress-info {
+        font-size: 2rem;
+    }
+
+    .reward .progress-status {
+        width: 120px;
+        height: 60px;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 20px 0 0 0;
+    width: 100%;
+    border-top: 1px solid var(--theme-colors-aliceBlue);
+    margin-top: 20px;
+}
+
+.items-container {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 385px;
+    min-width: 300px;
+    width: 30%;
+}
+
+.items-container .copyright {
+    margin-bottom: 15px;
+}
+
+.items-container ul {
+    margin-bottom: 15px;
 }

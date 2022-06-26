@@ -1,7 +1,9 @@
 class Reward {
 
-    constructor(rewardId, accountEmail, maxPoint) {
+    constructor(rewardId, rewardTitle, rewardDescription, accountEmail, maxPoint) {
         this.rewardId = rewardId;
+        this.rewardTitle = rewardTitle;
+        this.rewardDescription = rewardDescription;
         this.accountEmail = accountEmail;
         this.maxPoint = maxPoint;
         this.isCompleted = false;
@@ -34,8 +36,8 @@ class RewardManager {
         return reward;
     }
 
-    static createReward(accountEmail, rewardId, maxPoint) {
-        let reward = new Reward(rewardId, accountEmail, maxPoint);
+    static createReward(accountEmail, rewardId,rewardTitle, rewardDescription, maxPoint) {
+        let reward = new Reward(rewardId, rewardTitle, rewardDescription, accountEmail, maxPoint);
         let jsonRewards = localStorage.getItem(`rewards-${accountEmail}`);   
         let rewards = JSON.parse(jsonRewards);
 

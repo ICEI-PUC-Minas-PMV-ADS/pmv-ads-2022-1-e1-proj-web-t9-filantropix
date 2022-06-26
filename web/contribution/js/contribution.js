@@ -1,15 +1,21 @@
-function saveSelectedCause(cause) {
+function saveSelectedCause(cause, imagePath, reward) {
     localStorage.setItem('selected-cause', cause);
+    localStorage.setItem('cause-image-path', imagePath);
+    localStorage.setItem('cause-reward', reward);
 }
 
 function getSelectedCause() {
     return localStorage.getItem('selected-cause');
 }
 
+function getSelectedCauseImage() {
+    return localStorage.getItem('cause-image-path');
+}
+
 function saveContribution() {
 
     const valueinput = document.getElementById("value"); 
-    const contribution = new Contribution(valueinput.value, getSelectedCause());
+    const contribution = new Contribution(valueinput.value, getSelectedCause(), getSelectedCauseImage(), 'reward-01');
     ContributionManager.setContribution(contribution);
 }
 

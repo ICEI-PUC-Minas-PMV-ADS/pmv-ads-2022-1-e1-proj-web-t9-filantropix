@@ -95,7 +95,10 @@ button {
 }
 
 footer {
-    padding: 0;
+    padding: 20px 0 0 0;
+    width: 100%;
+    border-top: 1px solid var(--theme-colors-aliceBlue);
+    margin-top: 20px;
 }
 
 .items-container .copyright {

@@ -47,15 +47,23 @@ function logOff() {
 }
 
 
-function applyValues(element, reward) {
+function applyValues(accountEmail, rewardNumber) {
+
+    const reward = RewardManager.getReward(accountEmail, `reward-${rewardNumber}`);
+    const rewardTitle = document.getElementById(`reward-title-${rewardNumber}`);
+    const rewardDesc = document.getElementById(`reward-description-${rewardNumber}`);
+    const rewardStatus = document.getElementById(`reward-status-${rewardNumber}`);
+
+    rewardTitle.innerHTML = reward.rewardTitle;
+    rewardDesc.innerHTML = reward.rewardDescription;
+
     if (!reward.isCompleted) {
-        element.innerHTML = `${reward.currentPoints}/${reward.maxPoint}`;
+        rewardStatus.innerHTML = `${reward.currentPoints}/${reward.maxPoint}`;
     }
     else {
-        element.innerHTML = `Receber`;
+        rewardStatus.innerHTML = `Receber`;
     }
 }
-
 
 function init() {  
 
@@ -63,35 +71,20 @@ function init() {
     const rewards = RewardManager.getRewards(currentAccount.email);
 
     if (!rewards) {
-        RewardManager.createReward(currentAccount.email, 'reward-01', 5);
-        RewardManager.createReward(currentAccount.email, 'reward-02', 3);
-        RewardManager.createReward(currentAccount.email, 'reward-03', 2);
-        RewardManager.createReward(currentAccount.email, 'reward-04', 2);
-        RewardManager.createReward(currentAccount.email, 'reward-05', 8);
-        RewardManager.createReward(currentAccount.email, 'reward-06', 10);
+        RewardManager.createReward(currentAccount.email, 'reward-01', 'Quanto mais melhor!!', 'Ajude com 5 doações e receba uma recompensa.', 5);
+        RewardManager.createReward(currentAccount.email, 'reward-02', 'A primeira a gente nunca esquece.', 'Realize sua primeira contribuição.', 1);
+        RewardManager.createReward(currentAccount.email, 'reward-03', 'Liberdade é tudo!', 'Ajude 3 causas independentes.', 3);
+        RewardManager.createReward(currentAccount.email, 'reward-04', 'Patreon King', 'Ajude 3 causas patrocinadas.', 3);
+        RewardManager.createReward(currentAccount.email, 'reward-05', 'Stop the War!', 'Suporte nossas causas da Ucrânia.', 1);
+        RewardManager.createReward(currentAccount.email, 'reward-06', 'Filantrotec!', 'Suporte a campanha TecTeens.', 1);
     }
 
-    const reward01 = RewardManager.getReward(currentAccount.email, 'reward-01');
-    const reward02 = RewardManager.getReward(currentAccount.email, 'reward-02');
-    const reward03 = RewardManager.getReward(currentAccount.email, 'reward-03');
-    const reward04 = RewardManager.getReward(currentAccount.email, 'reward-04');
-    const reward05 = RewardManager.getReward(currentAccount.email, 'reward-05');
-    const reward06 = RewardManager.getReward(currentAccount.email, 'reward-06');
-
-    const reward01Btn = document.getElementById('reward-01');
-    const reward02Btn = document.getElementById('reward-02');
-    const reward03Btn = document.getElementById('reward-03');
-    const reward04Btn = document.getElementById('reward-04');
-    const reward05Btn = document.getElementById('reward-05');
-    const reward06Btn = document.getElementById('reward-06');
-
-    applyValues(reward01Btn, reward01);
-    applyValues(reward02Btn, reward02);
-    applyValues(reward03Btn, reward03);
-    applyValues(reward04Btn, reward04);
-    applyValues(reward05Btn, reward05);
-    applyValues(reward06Btn, reward06);
-
+    applyValues(currentAccount.email, '01');
+    applyValues(currentAccount.email, '02');
+    applyValues(currentAccount.email, '03');
+    applyValues(currentAccount.email, '04');
+    applyValues(currentAccount.email, '05');
+    applyValues(currentAccount.email, '06');
 
     let nameInput = document.getElementById('nameInput');
     
