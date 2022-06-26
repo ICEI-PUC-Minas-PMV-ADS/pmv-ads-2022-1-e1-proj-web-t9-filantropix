@@ -1,9 +1,106 @@
-.container-cadastro {
-    background-color: #EFF2F7;
-    width: 1440px;
-    height: 180px;
-    padding-left: 1cm;
-    padding-top: 1cm;
-    font-family: Arvo;
-    font-size: 50px;
+body {
+    position: relative;
 }
+
+.top-msg {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 50%;
+    background: linear-gradient(45deg, var(--theme-colors-maximumBluePurple) 0%,var(--theme-colors-lavenderBlue) 100%);
+    margin: 80px 25% 0;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    color: rgba(250,251,255,0.95);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+.top-msg-inner {
+    padding-left: 20px;
+  }
+
+  .top-msg-close {
+    width: 10px;
+    margin: 0 20px 0 0;
+  }
+
+
+.cadastre-container {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.cadastre-container img {
+    width: 80%;
+    max-width: 500px;
+}
+
+.cadastre-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.btn-cadastre {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+}
+
+.btn-cadastre:hover {
+    background-color: #bfc8ff;
+    color: var(--theme-colors-aliceBlue);
+}
+
+.btn-cadastre:active {
+    background-color: #bfc8ff;
+}
+
+.btn-login {
+    border: 1px solid #bfc8ff;
+    color: #bfc8ff;
+}
+
+.btn-login:hover {
+    background-color: #bfc8ff;
+    color: var(--theme-colors-aliceBlue);
+}
+
+
+

@@ -2,6 +2,21 @@ header {
     border-bottom: 1px solid var(--theme-colors-aliceBlue);
 }
 
+.btn-bd-primary {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+
+}
+
+.btn-login {
+    background-color: #9590f7;
+    color: var(--theme-colors-aliceBlue);
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .logo-image {
     width: 100px;
     margin: 20px 0;
@@ -31,18 +46,62 @@ header {
 .donation-section {
     padding: 40px 0 0;
     width: 80%;
-    
+
 }
-  
-.forms{
-    border-color: blueviolet;
+
+input:focus {
+    border-color: #9590f7 !important;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+
+.forms {
+    border-color: #9590f7;
     border-radius: 20px;
-    
+}
+
+.footer-title {
+    font-family: 'Akshar', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #9590f7;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
 
     .presentation h2 {
         font-size: 14px;
+
     }
+}
+
+/* Footer */
+
+footer {
+    padding: 20px 0 0 0;
+    width: 100%;
+    border-top: 1px solid var(--theme-colors-aliceBlue);
+    margin-top: 20px;
+}
+
+.items-container {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 385px;
+    min-width: 300px;
+    width: 30%;
+}
+
+.items-container .copyright {
+    margin-bottom: 15px;
+}
+
+.items-container ul {
+    margin-bottom: 15px;
 }
