@@ -13,12 +13,9 @@ de doação realizado.
 
 ## Integrantes
 
-* Alexandre Magalhães Ribeiro
 * Ângelo Rodrigues Pereira
 * Alípio Luís Avelar Vieira
-* Amanda Marques Pereira
 * Bruno Selas Soares
-* Gabrielle Evangelista Ribeiro
 * Raul Shinaede de Oliveira
 
 ## Orientador
