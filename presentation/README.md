@@ -1,10 +1,8 @@
 # Apresentação da Solução
 
+https://user-images.githubusercontent.com/82043220/177361824-3e296040-ffcf-4b6c-8451-54a9d0caaae2.mp4
 
 para ver a solução implementada, [acesse o link](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t9-filantropix/web/home/home.html)
-
-
-https://user-images.githubusercontent.com/82043220/177361824-3e296040-ffcf-4b6c-8451-54a9d0caaae2.mp4
 
 ## Autores
 
